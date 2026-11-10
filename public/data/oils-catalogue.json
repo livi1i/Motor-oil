@@ -1,0 +1,3492 @@
+{
+  "status": "complete_independently_verified",
+  "price_source": "user_provided_VK_card_captions",
+  "counts": {
+    "source_total": 110,
+    "published": 110,
+    "hidden": 0
+  },
+  "source_sha256": "6494f1403eae0f13632364b1c744d196b94ffb16e4c8015037babf86a2c9ebbc",
+  "manifest_sha256": "c7b4489b1115ee7706673b141a2ca087057f45dd8bdcb3d4de1c0b8785ef4fa8",
+  "data_gate_sha256": "42c952cdbb905ebddaf336b0bb4ecfbcc78ee9596e979a0be0060e440ca4e1c6",
+  "images_gate_sha256": "5b6256112b6d3c17f59c62dea9828ee5ab0924ef1b88352a8284b772afb2b3b9",
+  "additional_image_gates": [
+    {
+      "path": "reports/oils-images-v3-partial-gate.json",
+      "sha256": "801e31a10e63c6bb1cc9475cbb3f390314ea011b90d6ba58ad52502862e42930",
+      "manifest_path": "data/photos/oils-manifest-v3-partial.json",
+      "manifest_sha256": "6ab1841b691d6fc518c473ebfa298e91171dfd0b58a469aac0efccf3666019a3"
+    },
+    {
+      "path": "reports/oils-images-v3-taif-gate.json",
+      "sha256": "bfc3c335a9c3241a72502514c08a6d40703fa04600bd0305b9eaf28119e038f2",
+      "manifest_path": "data/photos/oils-manifest-v3-taif.json",
+      "manifest_sha256": "2c810d49e31ce45b41b8c337a68ebd0f086f0252566aba001b40b9999d4554f9"
+    },
+    {
+      "path": "reports/oils-images-v3-ngn-gate.json",
+      "sha256": "e6bdf32ac15477564c0d22e6d5e51123d5a5676699fa3c77094fa3f99b5116f0",
+      "manifest_path": "data/photos/oils-manifest-v3-ngn.json",
+      "manifest_sha256": "9c276258ae1dd9d171c9bf4c3b3256c10a9ed3e77da6919481bb7b0839f73084"
+    },
+    {
+      "path": "reports/oils-images-v3-mobil-network-gate.json",
+      "sha256": "089c0157d3bc14d8e2f351cef94e5b4b2e68ae0f0b0e4f5ef4cb543dc2825b8a",
+      "manifest_path": "data/photos/oils-manifest-v3-mobil-network.json",
+      "manifest_sha256": "04b4cec471cf57c167acbd0feeee6fded0d9bf52a60e1c8534161be0a5d4ffe7"
+    },
+    {
+      "path": "reports/oils-images-root-browser-teboil065-gate.json",
+      "sha256": "3848acc7095fef4ac3fda56b3138aabc6b4a06a78885f5ae479543f24dcaf25f",
+      "manifest_path": "data/photos/oils-manifest-root-browser-teboil065.json",
+      "manifest_sha256": "7df3d922b5e5f906650f1a3db171a9eca03908e371eaa15d279c62c5835eb7a0"
+    },
+    {
+      "path": "reports/oils-images-shell-nov07-gate.json",
+      "sha256": "1c71d8281ef5b3b216f0d253119c503e705da1e12607fc6a9ccea68294f8246c",
+      "manifest_path": "data/photos/oils-manifest-shell-nov07.json",
+      "manifest_sha256": "b743cdff00b6f958c1921548726a4a291cb7604f033f37649c120aa6fc251fad"
+    },
+    {
+      "path": "reports/oils-images-shell068-trendyol-gate.json",
+      "sha256": "5b16a23f2511dba91cb85e909604c14c2f3e9c7a2d9feef1c49029f078c8b561",
+      "manifest_path": "data/photos/oils-manifest-shell068-trendyol.json",
+      "manifest_sha256": "4893235f99eeab334d575c15430a6a12877aee2357b573ea1cb2e5a2e8277210"
+    },
+    {
+      "path": "reports/oils-images-havens-036-040-nov07-gate.json",
+      "sha256": "79fef4721c740efa744458a1e33f8fd519225778d756b59b3d949f4e65d8c5aa",
+      "manifest_path": "data/photos/oils-manifest-havens-036-040-nov07.json",
+      "manifest_sha256": "761f89705a6468abc37d076942168d0a95bf01fc2342ddc619f04075209c81e3"
+    },
+    {
+      "path": "reports/oils-images-teboil066-nov07-gate.json",
+      "sha256": "3b589c1673f509abf465ac5bec3f946f89fd64b87652432fc9d47d4b6b04ca85",
+      "manifest_path": "data/photos/oils-manifest-teboil066-nov07.json",
+      "manifest_sha256": "442f491712c0ccb0fd9d7444ad67b59cff2b19f3e8a53b445d7364294959c35a"
+    },
+    {
+      "path": "reports/oils-images-havens042-sp-nov07-gate.json",
+      "sha256": "1fd4b3a2ebff6382a99712cd0e854f447de01983a45908ad2c2d9d00295a8dc4",
+      "manifest_path": "data/photos/oils-manifest-havens042-sp-nov07.json",
+      "manifest_sha256": "9345ea6a4828261de8ee9bd78033f51f061d06b3d04482d1af197b6fb07ce78f"
+    },
+    {
+      "path": "reports/oils-images-shell067-nov08-gate.json",
+      "sha256": "54c76d89173a8c82c4853fa7b94cb7a61dc0b65d49d25b1f6daa654ecedcc493",
+      "manifest_path": "data/photos/oils-manifest-shell067-nov08.json",
+      "manifest_sha256": "f740368d0dfa2b372cfaeb5effec46a4541b03a978216481ee83a11475f9aced"
+    },
+    {
+      "path": "reports/oils-images-ngn099-nov08-gate.json",
+      "sha256": "8aec8d97e319bfcd4bf26f877934e51d903970735c3f3f8c6aead07cab91181a",
+      "manifest_path": "data/photos/oils-manifest-ngn099-nov08.json",
+      "manifest_sha256": "c11798ae0853a2b8f8cf8c3f8ba09c62366747b0aa37ef4a7c89b61c20f4f827"
+    },
+    {
+      "path": "reports/oils-images-motul110-mobil072-nov08-gate.json",
+      "sha256": "b1a2cc064b21b37862ade2683977e246796b3c7bae34948e7ec5a25dc818f39e",
+      "manifest_path": "data/photos/oils-manifest-motul110-mobil072-nov08.json",
+      "manifest_sha256": "9448fe0be8525660eefb7439ca8b793b1b21f9f8cd777a639e7ad0b5630abc99"
+    },
+    {
+      "path": "reports/oils-images-mobil077-nov08-gate.json",
+      "sha256": "cddc2a61d8faaa5ebef2ea50fcb6ee20d2b6ada1345ddaf67f1ae4188456e44e",
+      "manifest_path": "data/photos/oils-manifest-mobil077-nov08.json",
+      "manifest_sha256": "d590bbe9bd2c57e36ac91fc7780149f3ffba27ade7da6974af68776badaf949e"
+    },
+    {
+      "path": "reports/oils-images-havens033-045-nov08-gate.json",
+      "sha256": "3f15f77a057dd3afe7832b5f01160aec8da9669aa126d24355ade544b2e5998e",
+      "manifest_path": "data/photos/oils-manifest-havens033-045-nov08.json",
+      "manifest_sha256": "813e32f8d05724a38fc24050b8499786da2a37afcbbb1040ed5fd6f552d530df"
+    },
+    {
+      "path": "reports/oils-images-ardeca089-nov08-gate.json",
+      "sha256": "c389b2f112c09a59c2186192e45c4d7f1ead0753b2a65082dcda9eb803cbe38f",
+      "manifest_path": "data/photos/oils-manifest-ardeca089-nov08.json",
+      "manifest_sha256": "119bb53ede2ac6eca61e2af3d8c7e2547ed25b72385b18c22af469ca464ce80c"
+    },
+    {
+      "path": "reports/oils-images-mobil081-nov08-gate.json",
+      "sha256": "cccbdc17bf25d526d23093fab67369bf0d76bb47edc6645d987c13b24b5692ea",
+      "manifest_path": "data/photos/oils-manifest-mobil081-nov08.json",
+      "manifest_sha256": "746e51487db7a97e9533f822ee0eb86d05b3e0f7b2c828d341e349b86442bba8"
+    },
+    {
+      "path": "reports/oils-images-mobil084-nov08-v2-gate.json",
+      "sha256": "736f504c030a3fc45b6f7cdcd3cd232149ddf437ad1ae8080271da131318f88f",
+      "manifest_path": "data/photos/oils-manifest-mobil084-nov08-v2.json",
+      "manifest_sha256": "3eaf3953664e505deeb7df4078789788a180da0f2f4e9df22ad6da52026f5885"
+    },
+    {
+      "path": "reports/oils-images-mobil082-nov08-gate.json",
+      "sha256": "e66b3c89729266e694494800017ed14df992425bc038af3e40df93e3cd84494e",
+      "manifest_path": "data/photos/oils-manifest-mobil082-nov08.json",
+      "manifest_sha256": "c0211657fd725876a1a273ceea3c401ebfb22cc58a7e4cc949c2b21d3ad3eb02"
+    },
+    {
+      "path": "reports/oils-images-ardeca092-nov08-gate.json",
+      "sha256": "aca8bfeccfaaa658e9b846b3b889f16ead77872d191df06518e98ed3948f1526",
+      "manifest_path": "data/photos/oils-manifest-ardeca092-nov08.json",
+      "manifest_sha256": "981e100574f679041e542ffddf83b211efde9c3b3f52247418643faaf3ec1d13"
+    },
+    {
+      "path": "reports/oils-images-motul109-ph-nov08-gate.json",
+      "sha256": "0f614ddc20c336ce6720dad8b81f683be9ed4900ca7be94638bbe5795c15e060",
+      "manifest_path": "data/photos/oils-manifest-motul109-ph-nov08.json",
+      "manifest_sha256": "dd8ce69debd2f8690218351ded949be58973a3b4087a5dff16dc74eaeeb3d559"
+    },
+    {
+      "path": "reports/oils-images-mobil073-nov08-gate.json",
+      "sha256": "ad40706990838c0131ba724e3a87b5bd5e20646a405ab0cbd207ab5dc561724e",
+      "manifest_path": "data/photos/oils-manifest-mobil073-nov08.json",
+      "manifest_sha256": "1b60101db519226e82c9ddcccfab503fbbfaf70c5790f9b6000fab24882ecd6c"
+    },
+    {
+      "path": "reports/oils-images-mobil086-nov08-gate.json",
+      "sha256": "0c32f7794d9cea4f19ab637327f3fd3191aca1559401f16b4c9edc52d4d03403",
+      "manifest_path": "data/photos/oils-manifest-mobil086-nov08.json",
+      "manifest_sha256": "0127840eda1d5607d1cbf1497e802df47b1afce5ebd1c1071c5d268c055e65d6"
+    },
+    {
+      "path": "reports/oils-images-teboil058-shell070-nov08-gate.json",
+      "sha256": "fb36f2c37440fcc02a3924552c81d26167f60f67f00a4788e438d3d0adc6748f",
+      "manifest_path": "data/photos/oils-manifest-teboil058-shell070-nov08.json",
+      "manifest_sha256": "7e2f90c75be7470f383788c74b34294f5d74720465de1a8019878b9322eb783a"
+    },
+    {
+      "path": "reports/oils-images-shell057-stomasel-nov08-gate.json",
+      "sha256": "ab043594b0f3e16f055c009c662bde7d4b2f7b475720dc9d4d49fdcdfc62aadd",
+      "manifest_path": "data/photos/oils-manifest-shell057-stomasel-nov08.json",
+      "manifest_sha256": "578a1d03c54dc9b5f9fa293454392b0f0f6130225794a6b220ad88335930b4aa"
+    },
+    {
+      "path": "reports/oils-images-mobil074-prisma-nov08-gate.json",
+      "sha256": "2af2f0c2f4562f50d50f7c394851d6c055458ffe6cea9d0ed2da93410c76e2ad",
+      "manifest_path": "data/photos/oils-manifest-mobil074-prisma-nov08.json",
+      "manifest_sha256": "c80b01d9d30646b782626ddd2a5181667d33277905e5e4195e426c9dfc2ada69"
+    },
+    {
+      "path": "reports/oils-images-mobil075-085-nov08-gate.json",
+      "sha256": "675ddb28dd3e9e57a5ad74452a309886261bd76b5310c431703b05761dc86da4",
+      "manifest_path": "data/photos/oils-manifest-mobil075-085-nov08.json",
+      "manifest_sha256": "44bb0605b43feda76a70c66b4a5582054beeb103ac519e51666ffcd33be51d53"
+    },
+    {
+      "path": "reports/oils-images-teboil061-mobil076-nov08-gate.json",
+      "sha256": "1ff53cffb30f179791c94521f6f8cec0cb8d96be3c5a9909da9fc4241b9c8ee8",
+      "manifest_path": "data/photos/oils-manifest-teboil061-mobil076-nov08.json",
+      "manifest_sha256": "7692f59e770c3324d266543c719d767a734426370d36569d9e6645c5513a0256"
+    },
+    {
+      "path": "reports/oils-images-mobil087-nov08-gate.json",
+      "sha256": "a45f469e29bf01977672e1112016a24156c996f00e64c720cdb22f5dd355f5da",
+      "manifest_path": "data/photos/oils-manifest-mobil087-nov08.json",
+      "manifest_sha256": "8fdc0d2d7544357da52ce2d07acaa547810d7434099460d6674088828010a01d"
+    },
+    {
+      "path": "reports/oils-images-teboil062-amag-nov08-gate.json",
+      "sha256": "21ba46e842ce4072f7a51543d47ce2978b0c69dd1f244fc0908731eb305fb63e",
+      "manifest_path": "data/photos/oils-manifest-teboil062-amag-nov08.json",
+      "manifest_sha256": "3660d6564c0273e3c31d5a8e7a4654ae0b4222c21e6cebca1299e039c15fabd6"
+    },
+    {
+      "path": "reports/oils-images-ardeca094-nov08-gate.json",
+      "sha256": "5faa34309774e3a4b4f32f394a399f46885f35c7c1bc6f000d75726ec264d36f",
+      "manifest_path": "data/photos/oils-manifest-ardeca094-nov08.json",
+      "manifest_sha256": "155b4caf3cc06c1a1a5df2e917a112910a1e3c83a14643a8af9129918e154820"
+    },
+    {
+      "path": "reports/oils-images-shell059-parkgep-nov08-gate.json",
+      "sha256": "9535c48b5aa32cd34f1e5ef329caf588dce483d59c1f19cf3ce803a9257eba1a",
+      "manifest_path": "data/photos/oils-manifest-shell059-parkgep-nov08.json",
+      "manifest_sha256": "6455d9e6e41fa92128d7d3fd73e2ddf326ba77679ab958b2ee6de99a4cd4ba96"
+    },
+    {
+      "path": "reports/oils-images-mannol009-5l-nov08-gate.json",
+      "sha256": "fc98d6f2d7985f1bd55b49fee404b4687242fb4fe2971639ea6858d14f4cb965",
+      "manifest_path": "data/photos/oils-manifest-mannol009-5l-nov08.json",
+      "manifest_sha256": "83a308260d27829c54863640af2f30cc6e5d62b4d28248acb7df7b4b9ef77326"
+    },
+    {
+      "path": "reports/oils-images-havens034-035-corrected-nov08-gate.json",
+      "sha256": "2e606000dc7950f7a2d61f3dd5e49c3809ddb4cdf352b31fdc37979f4b0808e0",
+      "manifest_path": "data/photos/oils-manifest-havens034-035-corrected-nov08.json",
+      "manifest_sha256": "5ac7523757c4adf115bbc0b465b2be1ea4d05d06a3b35276b2d701424e9e2de6"
+    },
+    {
+      "path": "reports/oils-images-ngn098-nov08-gate.json",
+      "sha256": "9f14464fc1613e8afffa32749c4f77ceb2aabd4ddca2206b71b5204758de4bc9",
+      "manifest_path": "data/photos/oils-manifest-ngn098-nov08.json",
+      "manifest_sha256": "397a797db603985a5239afa60952fd8e0c475cf10d8e2023725cb5dea16bbe59"
+    },
+    {
+      "path": "reports/oils-images-user-first-nov09-gate.json",
+      "sha256": "c2e13c845ccc129300033a8e6739548ade31a6303c9d00c2387f96d60eecc955",
+      "manifest_path": "data/photos/oils-manifest-user-first-nov09.json",
+      "manifest_sha256": "9751c2ea096d2ec1a401b9ef373c67adecfa530d405663b3adf998685d42ff48"
+    },
+    {
+      "path": "reports/oils-images-user-second-nov09-gate.json",
+      "sha256": "aece68c95af82f00dc812359ece37ba30dd3cf77c685f5f7e726abb07d8f6ecf",
+      "manifest_path": "data/photos/oils-manifest-user-second-nov09.json",
+      "manifest_sha256": "32d08c1580111b29c47deafef536c057ccafce757107adf8138e5f906e7c933a"
+    },
+    {
+      "path": "reports/oils-images-user-mobil080-nov09-gate.json",
+      "sha256": "affbc0115b8f104928c722ab8758c465be514c4bdee882f24543cb99ffe2aaa5",
+      "manifest_path": "data/photos/oils-manifest-user-mobil080-nov09.json",
+      "manifest_sha256": "274574f841ad8e16121925dc7e2d1b069d296bfd95a15b44e42eed5e0428e5f4"
+    },
+    {
+      "path": "reports/oils-images-user-taif021-nov09-gate.json",
+      "sha256": "392a79daf53ddf37bd79f73984f52fb17518e4d22ff105c834532bfedb4aad3c",
+      "manifest_path": "data/photos/oils-manifest-user-taif021-nov09.json",
+      "manifest_sha256": "489c0218d2bedaa1b107d07064e8edbfd424bd297cd5ebceed4d1b8fb38bde3d"
+    },
+    {
+      "path": "reports/oils-images-user-ardeca108-nov09-gate.json",
+      "sha256": "30ed8b0425e6a8f6893fa6f76330f65f89526f498585cabd73e7ee3fd61019e9",
+      "manifest_path": "data/photos/oils-manifest-user-ardeca108-nov09.json",
+      "manifest_sha256": "c6b92a8cea3900e4623527b0f05126831f43acd43a1f07886832ae0b98bc641c"
+    },
+    {
+      "path": "reports/oils-images-taif014-dealer-clean-nov09-gate.json",
+      "sha256": "ebd4719547ee30c9544f6e946cdde0d65e733792a33f1da193f56d26d8a79806",
+      "manifest_path": "data/photos/oils-manifest-taif014-dealer-clean-nov09.json",
+      "manifest_sha256": "7b4b77e567670d11e472b7e12579c151aa6aca9d6a6bf03b44ef6c71f835e7a0"
+    },
+    {
+      "path": "reports/oils-images-user-ardeca091-clean-nov09-gate.json",
+      "sha256": "ab84ad88db8c2e121a5be41fd48d199cfc05430b4c834aebcfc3cbf6f24036e5",
+      "manifest_path": "data/photos/oils-manifest-user-ardeca091-clean-nov09.json",
+      "manifest_sha256": "a0a7b6cfeb52d7bbfdedbf22c6a80cb92c6b34878f4ea800d7e7678fd2f81ddf"
+    },
+    {
+      "path": "reports/oils-images-halo-clean-nov09-gate.json",
+      "sha256": "b5b05bc9bda0c0bca3a4152d3d8dbc54e2e5bab3704ba422997a006224fc4560",
+      "manifest_path": "data/photos/oils-manifest-halo-clean-nov09.json",
+      "manifest_sha256": "a33e6fc541d1832b97e06cce47f1606ac61e10d7f907c0128cff82da7a54d283"
+    },
+    {
+      "path": "reports/oils-images-mobil083-exact-nov09-gate.json",
+      "sha256": "bcab452e16495779519610ab35bd9d5272acfd380b75e5dd844341a2e99f263e",
+      "manifest_path": "data/photos/oils-manifest-mobil083-exact-nov09.json",
+      "manifest_sha256": "41a0723d8e1e5fe80b3d4840bf2f945fe964e2751f38a8c9e9a60635be06d253"
+    }
+  ],
+  "background_gate_sha256": "0132c509042c5888165a3f966823326bf8cdfc01b17d0ca1f9bb5c4796ba58f1",
+  "background_manifest_sha256": "017111061fd9fd2067009ea7f58689ea570e16ee97942bf99d55086c0981e90a",
+  "items": [
+    {
+      "id": "oil-001",
+      "brand": "MANNOL",
+      "name": "CERAMIC ULTRA",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5150,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7727-4_bdx_front_1200.png",
+        "sha256": "2c9464c7a520884bbf18c6b26be47f6c36b9ebf72b647351d87d00de1a6189b3",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7727-4_bdx_front_1200.png",
+        "source_sha256": "2c9464c7a520884bbf18c6b26be47f6c36b9ebf72b647351d87d00de1a6189b3",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            86,
+            89,
+            943,
+            1116
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-002",
+      "brand": "MANNOL",
+      "name": "CERAMIC ULTRA",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1550,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7727-1_bdx_front_1200.png",
+        "sha256": "f4c46ad90290911e4c68dcd3471b8ce44960abe933ce3e90a92f3238ac5728b4",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7727-1_bdx_front_1200.png",
+        "source_sha256": "f4c46ad90290911e4c68dcd3471b8ce44960abe933ce3e90a92f3238ac5728b4",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            258,
+            73,
+            746,
+            1127
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-003",
+      "brand": "MANNOL",
+      "name": "DIESEL EXTRA",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1000,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7504-1_blue_front_1200.png",
+        "sha256": "5e1463e4cc84a0021108fa4426b3bafb5055886a25b21676fbd6c9971575ba9c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7504-1_blue_front_1200.png",
+        "source_sha256": "5e1463e4cc84a0021108fa4426b3bafb5055886a25b21676fbd6c9971575ba9c",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            260,
+            69,
+            749,
+            1124
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-004",
+      "brand": "MANNOL",
+      "name": "MOLIBDEN",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7505-4_green_front_1200.png",
+        "sha256": "f162c62fced63ad208ba69a2f6841a1a28e40546e5fde160398e4b2d63b6823d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7505-4_green_front_1200.png",
+        "source_sha256": "f162c62fced63ad208ba69a2f6841a1a28e40546e5fde160398e4b2d63b6823d",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            87,
+            90,
+            945,
+            1114
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-005",
+      "brand": "MANNOL",
+      "name": "DIESEL",
+      "sae": "15W-40",
+      "volume_liters": 5,
+      "price_rub": 3450,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7402-5_green_front_1200.png",
+        "sha256": "b4f6a9ec45bc18f5bdc6344daefce0d033ec190f6dc0f257ef2f1ea308ba2c02",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7402-5_green_front_1200.png",
+        "source_sha256": "b4f6a9ec45bc18f5bdc6344daefce0d033ec190f6dc0f257ef2f1ea308ba2c02",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            126,
+            93,
+            912,
+            1105
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-006",
+      "brand": "MANNOL",
+      "name": "CLASSIC",
+      "sae": "10W-40",
+      "volume_liters": 5,
+      "price_rub": 4100,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7501-5_blue_front_1200.png",
+        "sha256": "340071fb1e62b41646c4ffa33b2faaf773f0a859f26d32cfb7ee6bef52d1115d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7501-5_blue_front_1200.png",
+        "source_sha256": "340071fb1e62b41646c4ffa33b2faaf773f0a859f26d32cfb7ee6bef52d1115d",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            127,
+            94,
+            912,
+            1108
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-007",
+      "brand": "MANNOL",
+      "name": "CLASSIC",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3350,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7501-4_blue_front_1200.png",
+        "sha256": "dfe923573343cd2b6907fb0c799c28aae8ae8bd3762ba8bef04fdba3eab2cb55",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7501-4_blue_front_1200.png",
+        "source_sha256": "dfe923573343cd2b6907fb0c799c28aae8ae8bd3762ba8bef04fdba3eab2cb55",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            88,
+            90,
+            943,
+            1118
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-008",
+      "brand": "MANNOL",
+      "name": "CLASSIC",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1050,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7501-1_blue_front_1200.png",
+        "sha256": "4305bb7a89ebf9c11d979203c2c864883e8fa83c1c1726aceb94ee6951f73d6c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7501-1_blue_front_1200.png",
+        "source_sha256": "4305bb7a89ebf9c11d979203c2c864883e8fa83c1c1726aceb94ee6951f73d6c",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            260,
+            69,
+            749,
+            1124
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-009",
+      "brand": "MANNOL",
+      "name": "DIESEL EXTRA",
+      "sae": "10W-40",
+      "volume_liters": 5,
+      "price_rub": 3900,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7504-5_blue_front_1200.png",
+        "sha256": "b733f61e73b0c8c1078fd9df96226cf3645836372f7ddd153fbbddd2959403a6",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7504-5_blue_front_1200.png",
+        "source_sha256": "b733f61e73b0c8c1078fd9df96226cf3645836372f7ddd153fbbddd2959403a6",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            127,
+            94,
+            912,
+            1108
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-010",
+      "brand": "MANNOL",
+      "name": "MOLIBDEN",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1050,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7505-1_green_front_1200.png",
+        "sha256": "08f4a8575a565640b7076b528f65a0f62b9d3100bbfe8f6eb816cc0d70aed7d0",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7505-1_green_front_1200.png",
+        "source_sha256": "08f4a8575a565640b7076b528f65a0f62b9d3100bbfe8f6eb816cc0d70aed7d0",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            258,
+            70,
+            748,
+            1125
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-011",
+      "brand": "MANNOL",
+      "name": "FAVORIT",
+      "sae": "15W-50",
+      "volume_liters": 5,
+      "price_rub": 4000,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7510-5_blue_front_1200.png",
+        "sha256": "e076f558023ca2d40c8643b1f74bfdf37ad19d4b8e4ff46e4e4102ab1614be83",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7510-5_blue_front_1200.png",
+        "source_sha256": "e076f558023ca2d40c8643b1f74bfdf37ad19d4b8e4ff46e4e4102ab1614be83",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            127,
+            94,
+            912,
+            1108
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-012",
+      "brand": "MANNOL",
+      "name": "FAVORIT",
+      "sae": "15W-50",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7510-4_blue_front_1200.png",
+        "sha256": "03d766c173e549391d633c0bd06679af3aadd328fc7202bccbe013ba6c7a507a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7510-4_blue_front_1200.png",
+        "source_sha256": "03d766c173e549391d633c0bd06679af3aadd328fc7202bccbe013ba6c7a507a",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            88,
+            90,
+            943,
+            1118
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-013",
+      "brand": "MANNOL",
+      "name": "FAVORIT",
+      "sae": "15W-50",
+      "volume_liters": 1,
+      "price_rub": 950,
+      "image": {
+        "path": "/assets/images/products/pictures_png_MN7510-1_blue_front_1200.png",
+        "sha256": "29953bda0d9d1557c4146c2fba7e841d8576d9fc9de71ec28183112da4bf2aa0",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/pictures_png_MN7510-1_blue_front_1200.png",
+        "source_sha256": "29953bda0d9d1557c4146c2fba7e841d8576d9fc9de71ec28183112da4bf2aa0",
+        "grid_frame": {
+          "canvas": [
+            1040,
+            1200
+          ],
+          "bounds": [
+            260,
+            69,
+            749,
+            1124
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-014",
+      "brand": "Taif",
+      "name": "FORTE",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 4550,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-014-dealer-clean-nov09.png",
+        "sha256": "8713ab00b371a7affb0629ab3cf83842e37fb053e88199891e1ace11fddff375",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-014-dealer-clean-nov09-original.webp",
+        "source_sha256": "d72994469c3c93232ee0fc71b69476ba066c6398d1bb471e3d3a37c50b3fc1d5",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            226,
+            112,
+            584,
+            685
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-015",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 900,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-1edc3b46be-211053-1000x1000-transparent.png",
+        "sha256": "d64ab2a7dca6a2f7528f33fecc57442f39071f236e3aa744a90c0a1e172c1721",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-1edc3b46be-211053-1000x1000.jpg",
+        "source_sha256": "2ff29cc2b71fd39e826a9a067e99fa3366465e4209c8ddf73dd2744470098599",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            186,
+            0,
+            817,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-016",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-39ede4c55d-211050-new-main-1000x1000-transparent.png",
+        "sha256": "6e7e31b894390dc30a85be3c6776fd80bcea1d8e4afe121b36c991b046685c20",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-39ede4c55d-211050-new-main-1000x1000.jpg",
+        "source_sha256": "7d6b0d534942fd41741c630a440f1979edc10b0c06fa706583f4bb673e82ae53",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            200,
+            32,
+            808,
+            986
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-017",
+      "brand": "Taif",
+      "name": "VITE C3",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 4550,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-78164b379b-211014-new-main-1000x1000-transparent.png",
+        "sha256": "eb4fe250658eed3c3aa78f8a936a7cb2e22eccaaf9179ba88375ee5c07cfb61a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-78164b379b-211014-new-main-1000x1000.jpg",
+        "source_sha256": "e3b0af689639cf93290be5478aa9c9155c02d303f6e27c7e2098c45a900345c3",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            192,
+            41,
+            808,
+            992
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-018",
+      "brand": "Taif",
+      "name": "VIVACE",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 4150,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-452b98e26e-211026-new-1000x1000-transparent.png",
+        "sha256": "a35ace855bbf7a3538d5d164c6ddb3efa0a9fd53b13f2e0dfecfe6b1e22017dd",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-452b98e26e-211026-new-1000x1000.jpg",
+        "source_sha256": "af85603e019f6730396cc89f41389f06081e29ef1a1b723af0fe7a6f76869bd4",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            200,
+            46,
+            816,
+            986
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-019",
+      "brand": "Taif",
+      "name": "VITE C3",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1300,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-0c532e75fe-211013-new-main-1000x1000-transparent.png",
+        "sha256": "4304fe5aafeb505ad2a194fff00db3efc9acd0ae07f4816e862bdf9123d77840",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-0c532e75fe-211013-new-main-1000x1000.jpg",
+        "source_sha256": "aef1e48b7dc520638b9fc3ba711c0529632084e12156117a31eead8123ba504e",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            224,
+            40,
+            816,
+            984
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-020",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-5f1dd123c3-211054-new-main-1000x1000-transparent.png",
+        "sha256": "6f54394816939529c3fc6432ca434defafd59b7be9ab38af5974bf43dfdded81",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-5f1dd123c3-211054-new-main-1000x1000.jpg",
+        "source_sha256": "1189bf4b78ec1ab9dcc8ca10c7e85adcb93d7f5170e0c7d42f9d54ff674e72e7",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            172,
+            16,
+            828,
+            991
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-021",
+      "brand": "Taif",
+      "name": "FORTE",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1300,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-021-user-nov09.png",
+        "sha256": "d88a99658a5e6b9bf6925ad6f5c4992d65e5505b631929beee0c76ce007c2d25",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-021-user-nov09-original.webp",
+        "source_sha256": "db372224a8ca2eaf9a35420c59127c9c9a8a49d3b27da802d9e34e49b50670f3",
+        "grid_frame": {
+          "canvas": [
+            900,
+            1200
+          ],
+          "bounds": [
+            209,
+            233,
+            677,
+            1085
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-022",
+      "brand": "Taif",
+      "name": "ALLEGRO",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 4100,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-4843fa50a4-211002-new-1000x1000-transparent.png",
+        "sha256": "a04dfa23e5dc9c418d3a07e506387cd44624b7ae9134bee2fe96e8bf95bac71e",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-4843fa50a4-211002-new-1000x1000.jpg",
+        "source_sha256": "ab3089867e2cfdce86dbd9353557ee78990a292297c7ad7c4d9bf72be490b1f6",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            176,
+            0,
+            816,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-023",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 950,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-38283437f4-211049-new-1000x1000-transparent-final.png",
+        "sha256": "1e0116c710ceb870400d3af9276301a2179db0155428b1289cfe16cd920a558b",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-38283437f4-211049-new-1000x1000.jpg",
+        "source_sha256": "555adb684317afd9a69a651fa6a7b3b2792c2d27d52ae05a38d7c26f90d87461",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            200,
+            59,
+            751,
+            957
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-024",
+      "brand": "Taif",
+      "name": "ALLEGRO",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1150,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-08f6f34745-211001-new-main-1000x1000-transparent.png",
+        "sha256": "76c3b1d6ba019033588c1a641ed8a883d6aa519c212a90954c5ec8379471869a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-08f6f34745-211001-new-main-1000x1000.jpg",
+        "source_sha256": "23043b28a7259834d7dd2489348ea19f4e3db1842785d2cee81bce1c1cbcd8fa",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            224,
+            15,
+            784,
+            990
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-025",
+      "brand": "Taif",
+      "name": "ALLEGRO",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1200,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-83db7a6a6d-211009-new-1000x1000-transparent.png",
+        "sha256": "fbec51836ac740ab54ba386347037060c125a4bae1fbd018cfa89cf6f519ca94",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-83db7a6a6d-211009-new-1000x1000.jpg",
+        "source_sha256": "41a4eeb9304b2c5b3f2faac9b8dad4e60928ffade9bce14d36e18d62a9f377d8",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            216,
+            8,
+            808,
+            992
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-026",
+      "brand": "Taif",
+      "name": "VIVACE",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1150,
+      "image": {
+        "path": "/assets/images/products/transparent/taif-c88ab8f93e-211025-new-1000x1000-transparent.png",
+        "sha256": "d993ecff6227eb2a904c9e80a5692b041ada26c3e74055d2d572599958187d67",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/taif-c88ab8f93e-211025-new-1000x1000.jpg",
+        "source_sha256": "9de1d752571deb515b0daa324845713a28656d287a3501426b6c08f19d1ca00d",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            219,
+            48,
+            776,
+            984
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-027",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3000,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-75d3d2d296-pvl000053-4l(1)-1000x1000-transparent.png",
+        "sha256": "7b075dbba7680179c66fb155921115c6b2c2e0abd9b47febc3b730d5e74d00c1",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-75d3d2d296-pvl000053-4l(1)-1000x1000.jpg",
+        "source_sha256": "a43b2541c26c24161486d19bf7aaaca32411be3299dcca2dd54360df3172a853",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            176,
+            0,
+            816,
+            992
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-028",
+      "brand": "Taif",
+      "name": "TACT",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 850,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-d937bd9a97-pvl000053-1l(2)-1000x1000-transparent.png",
+        "sha256": "57b2b825b6326453ec5019a646ef1a3d6659292b1ccf918d42965ecedb4449d6",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-d937bd9a97-pvl000053-1l(2)-1000x1000.jpg",
+        "source_sha256": "4968e84acd1bc07dd414d4ace32e9ffa21ed01b9b92bdcf763decfce815430e4",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            224,
+            80,
+            784,
+            976
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-029",
+      "brand": "Taif",
+      "name": "VIVACE",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1100,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-7f53859a42-211029-new-1000x1000-transparent.png",
+        "sha256": "94fc83892f1d0bd664b46c616ed7c593b3e4a2a330b720fa3199b7e3b0ee1edf",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-7f53859a42-211029-new-1000x1000.jpg",
+        "source_sha256": "ab79ab095b79162e6c0d5d798ee600bcaa12775d49b842bf5e53b47787ae297e",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            224,
+            41,
+            775,
+            992
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-030",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5100,
+      "image": {
+        "path": "/assets/images/products/havens-8343f65541-Triple-C-5W40_4l_F.png",
+        "sha256": "86106812b975d2f08e09abfa2aa01711b784ad2ee511a8c0faea77a237503f27",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-8343f65541-Triple-C-5W40_4l_F.png",
+        "source_sha256": "86106812b975d2f08e09abfa2aa01711b784ad2ee511a8c0faea77a237503f27",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            192,
+            91,
+            630,
+            714
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-031",
+      "brand": "Havens",
+      "name": "SUPER5000",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/havens-c866853456-Super-5000-10W40_4l_F.png",
+        "sha256": "47149c214a4bbd0c8c5a6422356e5ce5bcf2b2ed48aac492f34569b029f5b5a3",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-c866853456-Super-5000-10W40_4l_F.png",
+        "source_sha256": "47149c214a4bbd0c8c5a6422356e5ce5bcf2b2ed48aac492f34569b029f5b5a3",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            182,
+            87,
+            626,
+            721
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-032",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1450,
+      "image": {
+        "path": "/assets/images/products/havens-3b241da7ac-Triple-C-5W40_1l_F.png",
+        "sha256": "cd83e9182a2c59838d5e554bb8ddd76d82b1864495ff8310e52288ab47b9d10a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-3b241da7ac-Triple-C-5W40_1l_F.png",
+        "source_sha256": "cd83e9182a2c59838d5e554bb8ddd76d82b1864495ff8310e52288ab47b9d10a",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            260,
+            181,
+            540,
+            646
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-033",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1450,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-033-halo-clean-nov09.png",
+        "sha256": "c058506e9b928360f231a22332d1d620d14b26989268b30efdcf224e89e10a6c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/havens-triple-c-sp-033-nov08-original.jpeg",
+        "source_sha256": "cc4b2922efaf83848183c22acc7f5fca066acd821044c331039e76e1ec21d904",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            252,
+            0,
+            749,
+            831
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-034",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 6200,
+      "image": {
+        "path": "/assets/images/products/havens-8343f65541-Triple-C-5W40_4l_F.png",
+        "sha256": "86106812b975d2f08e09abfa2aa01711b784ad2ee511a8c0faea77a237503f27",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-8343f65541-Triple-C-5W40_4l_F.png",
+        "source_sha256": "86106812b975d2f08e09abfa2aa01711b784ad2ee511a8c0faea77a237503f27",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            192,
+            91,
+            630,
+            714
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-035",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 5100,
+      "image": {
+        "path": "/assets/images/products/havens-32c9fefef1-4-litra_1.png",
+        "sha256": "cb91cbf0a848e07b3fcdcf74df441cabf220445fc8ba2b5da35a324805c7be58",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-32c9fefef1-4-litra_1.png",
+        "source_sha256": "cb91cbf0a848e07b3fcdcf74df441cabf220445fc8ba2b5da35a324805c7be58",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            183,
+            88,
+            619,
+            724
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-036",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "0W-40",
+      "volume_liters": 4,
+      "price_rub": 5200,
+      "image": {
+        "path": "/assets/images/products/transparent/havens-triple-c-0w40-036-nov07.png",
+        "sha256": "2bb86de70139aabd50c1563e196e65a66cf4278e79286dec9968f71b0e1760dd",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/havens-triple-c-0w40-036-nov07-original.jpeg",
+        "source_sha256": "4b02cda559f9aa3ee238844f5a76ded19333f4310d39099e2777462b5b8de7eb",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            372,
+            320,
+            625,
+            687
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-037",
+      "brand": "Havens",
+      "name": "SUPER9000",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3300,
+      "image": {
+        "path": "/assets/images/products/havens-2b50e5d95f-Super-9000-10W40_4l_F.png",
+        "sha256": "0338aa96577e8e242edd5c88a9453d66187b677c0f1d82a942a4b21320917510",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-2b50e5d95f-Super-9000-10W40_4l_F.png",
+        "source_sha256": "0338aa96577e8e242edd5c88a9453d66187b677c0f1d82a942a4b21320917510",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            186,
+            83,
+            629,
+            713
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-038",
+      "brand": "Havens",
+      "name": "SUPER5000",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 950,
+      "image": {
+        "path": "/assets/images/products/havens-036239eab8-Super-5000-10W40_1l_F.png",
+        "sha256": "2f0f5e35569021331854e83b08104bac8a79c2d8029360bee0efd9080a3cdab7",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-036239eab8-Super-5000-10W40_1l_F.png",
+        "source_sha256": "2f0f5e35569021331854e83b08104bac8a79c2d8029360bee0efd9080a3cdab7",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            260,
+            175,
+            544,
+            652
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-039",
+      "brand": "Havens",
+      "name": "SUPER9000",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 950,
+      "image": {
+        "path": "/assets/images/products/havens-0283ebb5dd-Super-9000-10W40_1l_F.png",
+        "sha256": "0b310a63c27cc2495e2b6c774013c39d0567d2c3cef0fc31fd8ecb9540587dc2",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-0283ebb5dd-Super-9000-10W40_1l_F.png",
+        "source_sha256": "0b310a63c27cc2495e2b6c774013c39d0567d2c3cef0fc31fd8ecb9540587dc2",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            260,
+            179,
+            545,
+            652
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-040",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "0W-40",
+      "volume_liters": 1,
+      "price_rub": 1500,
+      "image": {
+        "path": "/assets/images/products/havens-triple-c-0w40-040-nov07-original.png",
+        "sha256": "b86f1a9f8bd635f84ce396b2a413f79737db732881897c30447fe32910677ef9",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-triple-c-0w40-040-nov07-original.png",
+        "source_sha256": "b86f1a9f8bd635f84ce396b2a413f79737db732881897c30447fe32910677ef9",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            261,
+            186,
+            540,
+            648
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-041",
+      "brand": "Havens",
+      "name": "SPECIAL OEF",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 5300,
+      "image": {
+        "path": "/assets/images/products/havens-cb93bc0986-1_4.png",
+        "sha256": "1e8b2eb158129e1d0664ebd666af5fc9bf96ba346fe48c7f867e04190f80987a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-cb93bc0986-1_4.png",
+        "source_sha256": "1e8b2eb158129e1d0664ebd666af5fc9bf96ba346fe48c7f867e04190f80987a",
+        "grid_frame": {
+          "canvas": [
+            1440,
+            1240
+          ],
+          "bounds": [
+            354,
+            68,
+            1122,
+            1188
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-042",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 5200,
+      "image": {
+        "path": "/assets/images/products/transparent/havens-triple-c-0w20-4l-sp-vi.png",
+        "sha256": "b3e52934e7e9e885c4ef92d49c2f7d2aca3f42dd533da8357ac094a86dc35e8e",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/havens-triple-c-0w20-4l-sp-vi-original.jpeg",
+        "source_sha256": "cc7963b80eef1376262b0a0cc2e5b526afc06ce952c5301917ad7bd98d8b35e4",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            192,
+            0,
+            814,
+            888
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-043",
+      "brand": "Havens",
+      "name": "SPECIAL OEF",
+      "sae": "5W-30",
+      "volume_liters": 5,
+      "price_rub": 6500,
+      "image": {
+        "path": "/assets/images/products/havens-70fce87d64-1_5.png",
+        "sha256": "f258acc89b693fb590ceb3d7a955c0ec0e0fb8d07291cd50066ec1e4eeb19888",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-70fce87d64-1_5.png",
+        "source_sha256": "f258acc89b693fb590ceb3d7a955c0ec0e0fb8d07291cd50066ec1e4eeb19888",
+        "grid_frame": {
+          "canvas": [
+            1440,
+            1240
+          ],
+          "bounds": [
+            342,
+            77,
+            1099,
+            1170
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-044",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-40",
+      "volume_liters": 5,
+      "price_rub": 6300,
+      "image": {
+        "path": "/assets/images/products/havens-30f62bccfa-Safeguard-5W40_5l_F.png",
+        "sha256": "edd8f59c6b58cc2e5191ba9dfe8bc35bb651531c539917877d21fdb6975f3c21",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-30f62bccfa-Safeguard-5W40_5l_F.png",
+        "source_sha256": "edd8f59c6b58cc2e5191ba9dfe8bc35bb651531c539917877d21fdb6975f3c21",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            187,
+            91,
+            621,
+            713
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-045",
+      "brand": "Havens",
+      "name": "TRIPLE C10000",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1500,
+      "image": {
+        "path": "/assets/images/products/transparent/havens-triple-c-sp-045-nov08.png",
+        "sha256": "8e246b5e195983b0947ad0931161038bba2492d5716f40a4894cd41bacf6e774",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/havens-triple-c-sp-045-nov08-original.jpeg",
+        "source_sha256": "358b35fa5d5a633cfdecf80fee1661123cf7c57b83089e16a660a763861bdf93",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            327,
+            161,
+            673,
+            741
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-046",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5200,
+      "image": {
+        "path": "/assets/images/products/havens-58282d1979-Safeguard-5W40_C3_4l_F.png",
+        "sha256": "5e5eaaf73f3165caba8954437ee6c2215bbecf86b48a12cf6b0e2aa43b9fc4c0",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-58282d1979-Safeguard-5W40_C3_4l_F.png",
+        "source_sha256": "5e5eaaf73f3165caba8954437ee6c2215bbecf86b48a12cf6b0e2aa43b9fc4c0",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            188,
+            88,
+            626,
+            712
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-047",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-30",
+      "volume_liters": 5,
+      "price_rub": 6300,
+      "image": {
+        "path": "/assets/images/products/havens-bbb53c93a0-1_5.png",
+        "sha256": "b05d6721ddb447893374543bda6324ff5f4cf0e21dd99e6ecd6ce2f8b00f6351",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-bbb53c93a0-1_5.png",
+        "source_sha256": "b05d6721ddb447893374543bda6324ff5f4cf0e21dd99e6ecd6ce2f8b00f6351",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            185,
+            62,
+            659,
+            779
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-048",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 5200,
+      "image": {
+        "path": "/assets/images/products/havens-221f961289-Safeguard-5w30_4.png",
+        "sha256": "3099dffa8197ec0d6c1749bb101b99c26301e26ac9f195e0b524cd3dcf5ef663",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-221f961289-Safeguard-5w30_4.png",
+        "source_sha256": "3099dffa8197ec0d6c1749bb101b99c26301e26ac9f195e0b524cd3dcf5ef663",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            179,
+            82,
+            651,
+            730
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-049",
+      "brand": "Havens",
+      "name": "HYBRID",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 7300,
+      "image": {
+        "path": "/assets/images/products/havens-cca81caca8-Hybrio-OW20_4l_F.png",
+        "sha256": "2548c7f83b0966d545f411b81ba630ed15d2bd5ad7f1cee6fdebd4069a5ac61d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-cca81caca8-Hybrio-OW20_4l_F.png",
+        "source_sha256": "2548c7f83b0966d545f411b81ba630ed15d2bd5ad7f1cee6fdebd4069a5ac61d",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            184,
+            98,
+            622,
+            724
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-050",
+      "brand": "Havens",
+      "name": "HYBRID",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 8100,
+      "image": {
+        "path": "/assets/images/products/havens-cca81caca8-Hybrio-OW20_4l_F.png",
+        "sha256": "2548c7f83b0966d545f411b81ba630ed15d2bd5ad7f1cee6fdebd4069a5ac61d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-cca81caca8-Hybrio-OW20_4l_F.png",
+        "source_sha256": "2548c7f83b0966d545f411b81ba630ed15d2bd5ad7f1cee6fdebd4069a5ac61d",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            184,
+            98,
+            622,
+            724
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-051",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "0W-30",
+      "volume_liters": 4,
+      "price_rub": 6950,
+      "image": {
+        "path": "/assets/images/products/havens-07b59470e1-3_1_Havens1088_prozrachnost_.png",
+        "sha256": "b08cc9b8272d869918d2d4a619931e00d87c9cc8ffe8a56c6922792790e3665c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-07b59470e1-3_1_Havens1088_prozrachnost_.png",
+        "source_sha256": "b08cc9b8272d869918d2d4a619931e00d87c9cc8ffe8a56c6922792790e3665c",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            168,
+            52,
+            650,
+            753
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-052",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1500,
+      "image": {
+        "path": "/assets/images/products/havens-37cdaf73a6-Safeguard-5W40_1l_F.png",
+        "sha256": "8b84d16f76f8569575fc5ecd2ddf5b996b7e46bc2706d9e28706726572e85af7",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-37cdaf73a6-Safeguard-5W40_1l_F.png",
+        "source_sha256": "8b84d16f76f8569575fc5ecd2ddf5b996b7e46bc2706d9e28706726572e85af7",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            259,
+            179,
+            542,
+            649
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-053",
+      "brand": "Havens",
+      "name": "SPECIAL OEF",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1550,
+      "image": {
+        "path": "/assets/images/products/havens-b8f9b1a56e-Havens1093_prozrachnost.png",
+        "sha256": "53576a291c1c81cadb5dd84462f6a702c5236bbec82a7bf313239382aa750441",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-b8f9b1a56e-Havens1093_prozrachnost.png",
+        "source_sha256": "53576a291c1c81cadb5dd84462f6a702c5236bbec82a7bf313239382aa750441",
+        "grid_frame": {
+          "canvas": [
+            1440,
+            1240
+          ],
+          "bounds": [
+            412,
+            95,
+            1048,
+            1153
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-054",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1500,
+      "image": {
+        "path": "/assets/images/products/havens-f04824452d-Safeguard-SAE-5W30_1L-png.png",
+        "sha256": "b7a8d2bf30d9d17b480c986e4b7aa18e9f692d99d3223cae63835bd219e39154",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-f04824452d-Safeguard-SAE-5W30_1L-png.png",
+        "source_sha256": "b7a8d2bf30d9d17b480c986e4b7aa18e9f692d99d3223cae63835bd219e39154",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            227,
+            130,
+            563,
+            689
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-055",
+      "brand": "Havens",
+      "name": "HYBRID",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1800,
+      "image": {
+        "path": "/assets/images/products/havens-67ff39ffc1-Hybrio-OW20_1l_F.png",
+        "sha256": "775b71483f272f6ac69bb23f3d81aac5e95fcbed35a0f76ec710a37a9d9d1f6f",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-67ff39ffc1-Hybrio-OW20_1l_F.png",
+        "source_sha256": "775b71483f272f6ac69bb23f3d81aac5e95fcbed35a0f76ec710a37a9d9d1f6f",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            260,
+            182,
+            539,
+            649
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-056",
+      "brand": "Havens",
+      "name": "SAFEGUARD",
+      "sae": "0W-30",
+      "volume_liters": 1,
+      "price_rub": 1900,
+      "image": {
+        "path": "/assets/images/products/havens-39a066b788-3-_-1-Havens1088_prozrachnost-.png",
+        "sha256": "22e61148ad69d8ecd40edcec44bb7dd36f1a8c044b80998825305fb3a92c6933",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/havens-39a066b788-3-_-1-Havens1088_prozrachnost-.png",
+        "source_sha256": "22e61148ad69d8ecd40edcec44bb7dd36f1a8c044b80998825305fb3a92c6933",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            217,
+            65,
+            619,
+            744
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-057",
+      "brand": "Shell",
+      "name": "Helix HX8 X",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 4250,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-hx8-x-5w30-4l-stomasel.png",
+        "sha256": "712732ea3b5ee882409406433d4f487d2eaf08bbb00e6b62a65bbb67445b01d3",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-hx8-x-5w30-4l-stomasel-original.jpeg",
+        "source_sha256": "92cb73816cc9cff44e7022d131b14fc8e1201f4b19277ebc3caaffb3887a108b",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1200
+          ],
+          "bounds": [
+            213,
+            48,
+            1066,
+            1164
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-058",
+      "brand": "Teboil",
+      "name": "GOLD FE",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 3200,
+      "image": {
+        "path": "/assets/images/products/transparent/teboil-gold-fe-5w30-4l-vi.png",
+        "sha256": "4be6e428333448e07791f27413c879f07fa409545a3add93a4d9b170d8c25c30",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/teboil-gold-fe-5w30-4l-vi-original.jpeg",
+        "source_sha256": "3757a7b89667c15c1d264e826a69efe5485800d033534c0e5a614d18f43f2bd4",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            161,
+            0,
+            833,
+            1000
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-059",
+      "brand": "Shell",
+      "name": "Helix ULTRA",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5100,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-ultra-5w40-4l-parkgep.png",
+        "sha256": "e171d7aafd31be098000712f0b925e0159886b0e848624ce61b1c36f09f9d47e",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-ultra-5w40-4l-parkgep-original.webp",
+        "source_sha256": "9bc106bf8671e50d06ad1efc3bad3e3985851319321030febd57103265a6c648",
+        "grid_frame": {
+          "canvas": [
+            512,
+            512
+          ],
+          "bounds": [
+            111,
+            72,
+            399,
+            440
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-060",
+      "brand": "Shell",
+      "name": "Helix ULTRA AF",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1970,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-060-user-nov09.png",
+        "sha256": "bebd6efb39d2c9e2a6eb4cb8d53c6c997c14ae892b2dd39ca71fea51a6d95744",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-060-user-nov09-original.webp",
+        "source_sha256": "8a3e3ef17086208c3a49082177b22b2f72692adbcdf7f086a48e55daa8ee76b6",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1200
+          ],
+          "bounds": [
+            288,
+            24,
+            891,
+            1171
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-061",
+      "brand": "Teboil",
+      "name": "DIAMOND ECP C3",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 4050,
+      "image": {
+        "path": "/assets/images/products/transparent/teboil-diamond-ecp-c3-5w30-4l-vi.png",
+        "sha256": "a6569bc1f4f76399e54fab9e9a6537c8eaf6787782be542cfc334ccdd42480ed",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/teboil-diamond-ecp-c3-5w30-4l-vi-original.jpeg",
+        "source_sha256": "0c02d0270d60787bbd240a2c92a61b085f5e90a14d92ddd5a48913c88301f204",
+        "grid_frame": {
+          "canvas": [
+            560,
+            504
+          ],
+          "bounds": [
+            111,
+            0,
+            449,
+            504
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-062",
+      "brand": "Teboil",
+      "name": "GOLD FE",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1000,
+      "image": {
+        "path": "/assets/images/products/transparent/teboil-gold-fe-5w30-1l-amag.png",
+        "sha256": "95b5752e48b7d36608bf5414291a72772b8d81dfc2353afc4a1c7ab0c91d2324",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/teboil-gold-fe-5w30-1l-amag-original.jpeg",
+        "source_sha256": "e457b81d7a79aae2505cf651ba418ef37fa41313ec2b92b05b37e8c52aaeea5e",
+        "grid_frame": {
+          "canvas": [
+            768,
+            768
+          ],
+          "bounds": [
+            205,
+            0,
+            579,
+            764
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-063",
+      "brand": "Shell",
+      "name": "Helix HX8 ECT",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1600,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-nov07-oil-063-transparent.png",
+        "sha256": "6b2bf9c8b850ed65359259e9629332dc1b645d81585e388460ce96f6cc0fb862",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-nov07-oil-063-0.webp",
+        "source_sha256": "dabf3004623b61c0b61fb632ad7e8e166e7cfe4d035b262f95f02447b6a326f4",
+        "grid_frame": {
+          "canvas": [
+            600,
+            600
+          ],
+          "bounds": [
+            159,
+            40,
+            450,
+            561
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-064",
+      "brand": "Shell",
+      "name": "Helix ULTRA ECT",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1500,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-nov07-oil-064-transparent.png",
+        "sha256": "e09036e3e173c552809f1da858a2f8fabc7d741b29e881c6ad79d431ee120999",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-nov07-oil-064-1.webp",
+        "source_sha256": "a55af68fda87172a113e1d5b4218dd892440fd506c2f4d091de914e300fa0551",
+        "grid_frame": {
+          "canvas": [
+            1800,
+            1800
+          ],
+          "bounds": [
+            480,
+            118,
+            1320,
+            1680
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-065",
+      "brand": "Teboil",
+      "name": "GOLD L",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5100,
+      "image": {
+        "path": "/assets/images/products/teboil-gold-l-5w40-4l-root-browser.png",
+        "sha256": "9e3a4bbbf96bfcdba43ace665489d8993dae231af043a0cf63ffc525e7030dc9",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/teboil-gold-l-5w40-4l-root-browser.png",
+        "source_sha256": "9e3a4bbbf96bfcdba43ace665489d8993dae231af043a0cf63ffc525e7030dc9",
+        "grid_frame": {
+          "canvas": [
+            390,
+            600
+          ],
+          "bounds": [
+            0,
+            0,
+            390,
+            600
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-066",
+      "brand": "Teboil",
+      "name": "SILVER SN",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 690,
+      "image": {
+        "path": "/assets/images/products/transparent/teboil-silver-sn-10w40-1l-vi.png",
+        "sha256": "3b934abf47f840fbdec3ec8ddc6c5a6bd987049912a1549d0ff4f877adbd3f9a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/teboil-silver-sn-10w40-1l-vi-original.jpeg",
+        "source_sha256": "b3a829d404b19a3daac532bfd1b5dd9e3d4a307485808c60dd0d04ed41d58a9a",
+        "grid_frame": {
+          "canvas": [
+            2400,
+            1600
+          ],
+          "bounds": [
+            795,
+            0,
+            1608,
+            1600
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-067",
+      "brand": "Shell",
+      "name": "Helix ULTRA SP",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1760,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-ultra-sp-0w20-1l-neoszerviz.png",
+        "sha256": "b3812952a7e8ca8f2a4df6764631c14e80c39c02ec0fcb9f3c7617e801a19e00",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-ultra-sp-0w20-1l-neoszerviz-original.jpeg",
+        "source_sha256": "2ffebc1b403c24c039cb90aa63f5dda3b4a5284a5770c0271ab67ec3ca9a9224",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1200
+          ],
+          "bounds": [
+            335,
+            48,
+            880,
+            1105
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-068",
+      "brand": "Shell",
+      "name": "Helix HX8",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1250,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-helix-hx8-5w40-1l-trendyol.png",
+        "sha256": "d73d63abc65761fa101a034562b5a4af42416acce2c79d0d8caf881ef167f4aa",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-helix-hx8-5w40-1l-trendyol-original.jpg",
+        "source_sha256": "c8c4de44d34f1bfe145951084738440ba731cad003befee88dc8a4b1ac7ae7f0",
+        "grid_frame": {
+          "canvas": [
+            401,
+            601
+          ],
+          "bounds": [
+            89,
+            120,
+            304,
+            504
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-069",
+      "brand": "Shell",
+      "name": "Helix HX8",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 5350,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-nov07-oil-069-transparent.png",
+        "sha256": "03c0d8a0b2c2365bee0f7e666e2f74dae8418b77d37ac0800299ecdc8b453536",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-nov07-oil-069-3.png",
+        "source_sha256": "f1bbd7218c779b7aa25aee7279575ad045794d7b504d1f1b9687f05335ef142a",
+        "grid_frame": {
+          "canvas": [
+            391,
+            501
+          ],
+          "bounds": [
+            0,
+            1,
+            390,
+            501
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-070",
+      "brand": "Shell",
+      "name": "Helix HX7",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 3550,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-hx7-10w40-4l-tridon.png",
+        "sha256": "7c0a3fec3a20d59e64fb62cc994ef02ea2d4c68b7ee3063d4c2f4c6983eb3700",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-hx7-10w40-4l-tridon-original.png",
+        "source_sha256": "248cff532e2e1dadd9ccfec1055c285a47c6b3f03075d85b589bd5572a6610d7",
+        "grid_frame": {
+          "canvas": [
+            807,
+            805
+          ],
+          "bounds": [
+            158,
+            63,
+            683,
+            740
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-071",
+      "brand": "Shell",
+      "name": "Helix HX7",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1100,
+      "image": {
+        "path": "/assets/images/products/transparent/shell-hx7-10w40-1l-fixra-transparent.png",
+        "sha256": "f56f5f10612a58943daff13142756b3f07dbe43920deb60ee32eee5978964a0c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/shell-hx7-10w40-1l-fixra.jpg",
+        "source_sha256": "f006370e6fbd24323649cbcc2f72b2c6cce7bd5c48310c97b8e66375b3964d43",
+        "grid_frame": {
+          "canvas": [
+            2000,
+            2000
+          ],
+          "bounds": [
+            463,
+            0,
+            1536,
+            2000
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-072",
+      "brand": "Mobil",
+      "name": "Super3000 XE",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 6800,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-072-halo-clean-nov09.png",
+        "sha256": "4b3b0f62489680f93480075e7fa55cfed999c984a4074cea835e8c47b8c4f53d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-super3000-xe-5w30-4l-nov08-original.jpeg",
+        "source_sha256": "ad59806b83a75377e7dfd74a5310686e02ca59e563cd8ef2fd77c717c34a978b",
+        "grid_frame": {
+          "canvas": [
+            560,
+            560
+          ],
+          "bounds": [
+            81,
+            9,
+            477,
+            547
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-073",
+      "brand": "Mobil",
+      "name": "Super3000",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 5800,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-super3000-5w30-4l-n11.png",
+        "sha256": "c4b03f11d1b9a7eeade3330aef2deea3d06db3e84278594807999b63e68f23e7",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-super3000-5w30-4l-n11-original.jpeg",
+        "source_sha256": "ffa27cae383cb49584441314b8079b8e58754d9036d4321d80fa432b25cff24d",
+        "grid_frame": {
+          "canvas": [
+            602,
+            857
+          ],
+          "bounds": [
+            97,
+            160,
+            503,
+            696
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-074",
+      "brand": "Mobil",
+      "name": "1 ESP",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 8900,
+      "image": {
+        "path": "/assets/images/products/mobil1-esp-5w30-4l-prisma-original.webp",
+        "sha256": "5915a48ce0007ce7ffcfc455cc65226c4c97e26e7e964426d132cce6e8acb2eb",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/mobil1-esp-5w30-4l-prisma-original.webp",
+        "source_sha256": "5915a48ce0007ce7ffcfc455cc65226c4c97e26e7e964426d132cce6e8acb2eb",
+        "grid_frame": {
+          "canvas": [
+            1440,
+            1953
+          ],
+          "bounds": [
+            6,
+            7,
+            1435,
+            1948
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-075",
+      "brand": "Mobil",
+      "name": "Super3000 XE",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1700,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-xe-5w30-1l-mein.png",
+        "sha256": "4c7d0fc8e734f11de6955f8b46c75b24cbfbb89f61061694c74e3017ac7b9e03",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-xe-5w30-1l-mein-original.jpeg",
+        "source_sha256": "e1469f483aefb237f78edb5d6bb64865e3d67d264401a7b41e965a5ec31dee7e",
+        "grid_frame": {
+          "canvas": [
+            1536,
+            2048
+          ],
+          "bounds": [
+            288,
+            8,
+            1248,
+            2048
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-076",
+      "brand": "Mobil",
+      "name": "1 FS",
+      "sae": "0W-40",
+      "volume_liters": 4,
+      "price_rub": 9400,
+      "image": {
+        "path": "/assets/images/products/mobil1-fs-0w40-4l-prisma-original.png",
+        "sha256": "9b5046a5b86c229edb22de2067fa2970e58a732f5b810a589ff0c2c7ffccdc31",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/mobil1-fs-0w40-4l-prisma-original.png",
+        "source_sha256": "9b5046a5b86c229edb22de2067fa2970e58a732f5b810a589ff0c2c7ffccdc31",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1627
+          ],
+          "bounds": [
+            5,
+            5,
+            1197,
+            1623
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-077",
+      "brand": "Mobil",
+      "name": "1 ESP",
+      "sae": "0W-30",
+      "volume_liters": 4,
+      "price_rub": 8500,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-1-esp-0w30-4l-filterabc.png",
+        "sha256": "a8b5b4ef0b36ee2076a2e035201ca8e390cb7ae525a2aa8a4f593bcdb40c702a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-1-esp-0w30-4l-filterabc-original.jpeg",
+        "source_sha256": "d323d9874909fff21d0ea38a82bf227810e4c5b230f257c547a9025853fc1549",
+        "grid_frame": {
+          "canvas": [
+            984,
+            1000
+          ],
+          "bounds": [
+            0,
+            0,
+            976,
+            992
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-078",
+      "brand": "Mobil",
+      "name": "1 FS",
+      "sae": "0W-40",
+      "volume_liters": 1,
+      "price_rub": 2500,
+      "image": {
+        "path": "/assets/images/products/transparent/oilstore-a98b2263b9-153675-1000x1000-transparent.png",
+        "sha256": "8de063b6463c4c0cfff55b5c2278bab1c0f2e32421e7068dcc86fc397421af28",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oilstore-a98b2263b9-153675-1000x1000.jpg",
+        "source_sha256": "2f349671987a20ece279d71aed0a3dae3a521a6da1f3744ed16287181c34bb04",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            163,
+            24,
+            859,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-079",
+      "brand": "Ardeca",
+      "name": "SYNTH-MS",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1400,
+      "image": {
+        "path": "/assets/images/products/ardeca-95e8985c6c-P01051_600006-ARD1R.png",
+        "sha256": "539be4ae3887416636d4767f2e9c56ec4cb19255d0d1203392800a5fb71a61aa",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/ardeca-95e8985c6c-P01051_600006-ARD1R.png",
+        "source_sha256": "539be4ae3887416636d4767f2e9c56ec4cb19255d0d1203392800a5fb71a61aa",
+        "grid_frame": {
+          "canvas": [
+            2000,
+            2000
+          ],
+          "bounds": [
+            515,
+            90,
+            1413,
+            1899
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-080",
+      "brand": "Mobil",
+      "name": "1 ESP",
+      "sae": "0W-40",
+      "volume_liters": 5,
+      "price_rub": 10600,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-080-user-nov09.png",
+        "sha256": "f09973c5f44503f6b5b331296313f92895c70089445dbd84bbfd353a32d9296b",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-080-user-nov09-original.jpeg",
+        "source_sha256": "c957bf8cf18ab47790b72d05959f5853ab2ccb8bc8480f8978f2733251d1ca0c",
+        "grid_frame": {
+          "canvas": [
+            821,
+            1095
+          ],
+          "bounds": [
+            97,
+            25,
+            723,
+            1065
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-081",
+      "brand": "Mobil",
+      "name": "1 FS",
+      "sae": "5W-50",
+      "volume_liters": 4,
+      "price_rub": 9300,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil1-fs-5w50-4l-shopms.png",
+        "sha256": "fe40b00d390d31dfa2a357d01a37f085d3f35cd512fa3dadb351a302e83d0068",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil1-fs-5w50-4l-shopms-original.jpeg",
+        "source_sha256": "079084eb0e39061843d03e2679a648f7c54d68cf165c397151c19032718e7b1c",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1200
+          ],
+          "bounds": [
+            184,
+            50,
+            981,
+            1141
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-082",
+      "brand": "Mobil",
+      "name": "Super3000",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 7250,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-super3000-5w40-4l-oilgroup.png",
+        "sha256": "1d002db1551f202b93e9e9b9b6cf6f69f73c7540a9493df8ca4589e2dc3ed200",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-super3000-5w40-4l-oilgroup-original.jpeg",
+        "source_sha256": "02913fa8dc532db85f351ace90802732d3dd97d7da98b6b95d83b6ddc67b425f",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            153,
+            16,
+            872,
+            985
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-083",
+      "brand": "Mobil",
+      "name": "Полусинтетическое моторное масло",
+      "sae": "10W-40",
+      "volume_liters": 4,
+      "price_rub": 4050,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-083-oilstore-exact-nov09.png",
+        "sha256": "0fa5f52830a6b0dd9d4de5f34c81bbec1e4a36d2da8a049c9ef1036d723c2692",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-083-oilstore-exact-nov09-original.jpeg",
+        "source_sha256": "cd36b54b1b16f9822984bb6035c29cceb1a121a7ba6826b8a94179aee5417175",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            163,
+            50,
+            824,
+            949
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-084",
+      "brand": "Mobil",
+      "name": "1 FS",
+      "sae": "5W-50",
+      "volume_liters": 1,
+      "price_rub": 2450,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil1-fs-5w50-1l-trodo-v2.png",
+        "sha256": "e529e1a6e308b9e5312480289fce02ec7fb211d0a73810ba9acf09d3fecabd94",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil1-fs-5w50-1l-trodo-original.jpeg",
+        "source_sha256": "4ebe566a45bc1ede1a96ee4e2c2cca5337a07793fbbe6d609628c65ce0fce5fa",
+        "grid_frame": {
+          "canvas": [
+            1440,
+            1440
+          ],
+          "bounds": [
+            360,
+            20,
+            1078,
+            1440
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-085",
+      "brand": "Mobil",
+      "name": "1 ESP",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 2500,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil1-esp-5w30-1l-oilpark.png",
+        "sha256": "391707f60b19fdc5fc334b23bb901931d758ad427e7284237c6788f154a4fa2a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil1-esp-5w30-1l-oilpark-original.jpeg",
+        "source_sha256": "18c8c9f23b59018f941c992efa8187de60d75bc9dd8009eb39ad5bd31b643f13",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            208,
+            8,
+            592,
+            799
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-086",
+      "brand": "Mobil",
+      "name": "Super3000",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1600,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-super3000-5w30-1l-reifen.png",
+        "sha256": "122eda6bd9cdd7c46374b5370efef1f26fc84bff919068f927739cc2d63b4331",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-super3000-5w30-1l-reifen-original.webp",
+        "source_sha256": "476a59965e55d7a5f366650576cbe3ba43c194914f805f29b1acac0e096578ec",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            115,
+            16,
+            486,
+            785
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-087",
+      "brand": "Mobil",
+      "name": "Полусинтетическое моторное масло",
+      "sae": "10W-40",
+      "volume_liters": 1,
+      "price_rub": 1200,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-semisynthetic-10w40-1l-vi.png",
+        "sha256": "d0887778505c2de4b4fd2c2228cefe6854f5874ad351d1a3aecd5dbd1b732726",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-semisynthetic-10w40-1l-vi-original.jpeg",
+        "source_sha256": "5b16153daecb15f43cfe6234a721be4274e9506b1cf08ceecf8422676977ec37",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            800
+          ],
+          "bounds": [
+            408,
+            0,
+            792,
+            800
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-088",
+      "brand": "Mobil",
+      "name": "Super3000",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1900,
+      "image": {
+        "path": "/assets/images/products/transparent/mobil-net-644056f9d7-transparent.png",
+        "sha256": "36a6f5b19776b7caa9a345b1f4f77b598867fa6e133c2ad0f6f773bc413c534d",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/mobil-net-644056f9d7.webp",
+        "source_sha256": "fc7b7ed945745fdab6977d597b651f412222157678c1875cc0896aa180b25d92",
+        "grid_frame": {
+          "canvas": [
+            600,
+            600
+          ],
+          "bounds": [
+            183,
+            64,
+            418,
+            540
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-089",
+      "brand": "Ardeca",
+      "name": "SYNTH-SX",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 4300,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-synth-sx-5w40-4l-oilpark.png",
+        "sha256": "32a32918b1f0f1d4917690b0b566c6c1596884376e3b3a7e54e18c9d4a371521",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-synth-sx-5w40-4l-oilpark-original.jpeg",
+        "source_sha256": "10ba2ad17b0be120bfcca56f966ff07b839f927a4016f898a1967efb810a4f0a",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            288,
+            256,
+            520,
+            544
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-090",
+      "brand": "NGN",
+      "name": "SYNERGY PLUS",
+      "sae": "0W-30",
+      "volume_liters": 4,
+      "price_rub": 7420,
+      "image": {
+        "path": "/assets/images/products/transparent/ngn-5bbc0b4a09-NGN_025.1-transparent.png",
+        "sha256": "72444c1b26434a10fdafb998be8d270a16fb1ae4c280f6e3f9ec65979f12c267",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-5bbc0b4a09-NGN_025.1.jpg",
+        "source_sha256": "6cabf742c8597cfbb980a625b916de20cc616fedab1aa30e1c756b43ab1f52b0",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            80,
+            29,
+            718,
+            783
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-091",
+      "brand": "Ardeca",
+      "name": "SYNTH-XL",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 4800,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-091-user-clean-nov09.png",
+        "sha256": "0b94dd5c14839dbb67e6255f7c621e16fb7a2de37c2d363bac9a778c54703e55",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-091-user-clean-nov09-original.jpeg",
+        "source_sha256": "8d676342d9c4a071ecbc5378f64cf2a1c281fc75ae1780942ea67d1184439430",
+        "grid_frame": {
+          "canvas": [
+            900,
+            1200
+          ],
+          "bounds": [
+            96,
+            343,
+            646,
+            1011
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-092",
+      "brand": "Ardeca",
+      "name": "CERA-MIX XL",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 6620,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-cera-mix-xl-5w30-4l-vi.png",
+        "sha256": "1d4f5d8f5d3d44a95cc0d1542c6a453f71b83576f8b16095b31f520b657892a5",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-cera-mix-xl-5w30-4l-vi-original.jpeg",
+        "source_sha256": "d5f41c5e6edee8d6efe77d26718f2a789e266574961a3cc10bd4dd0f44503e3f",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            192,
+            112,
+            816,
+            880
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-093",
+      "brand": "Ardeca",
+      "name": "SYNTH-DX",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 5000,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-093-user-nov09.png",
+        "sha256": "badd907ddf68c1d3ba7b8a14217a8462d1ab4a8795d2d0b3a8c65df6245571ee",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-093-user-nov09-original.jpeg",
+        "source_sha256": "ac0669852f8adef2c306ce426a0d2db0f3e2fa1bd189a80ffc2327a0cfdaf88e",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            176,
+            96,
+            824,
+            904
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-094",
+      "brand": "Ardeca",
+      "name": "SYNTH-MF",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 4700,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-synth-mf-5w30-4l-vi.png",
+        "sha256": "db72cbfe0aacb8ad4e38866394d40df8c1c158941aa268449e0185c29ad182a6",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-synth-mf-5w30-4l-vi-original.jpeg",
+        "source_sha256": "6c145b9df5ee93f50f78ed410a542c17615902bd3a74e625bcbd03de935f8d2e",
+        "grid_frame": {
+          "canvas": [
+            1000,
+            1000
+          ],
+          "bounds": [
+            240,
+            177,
+            760,
+            818
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-095",
+      "brand": "Ardeca",
+      "name": "SYNTH-SX",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1450,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-e657639fed-SYNTH-SX-5W40-600026-ARD1R-transparent.png",
+        "sha256": "cbd6c0af13bf8030705742ac4f352b3cfa88c1afd48a9b426a5f2904c5fde438",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-e657639fed-SYNTH-SX-5W40-600026-ARD1R.png",
+        "source_sha256": "8a2b9ac635e67c1c44e9073becfd72bc7408d0236ddcdf22003ee400b0c3e2bf",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            103,
+            15,
+            247,
+            322
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-096",
+      "brand": "Ardeca",
+      "name": "SYNTH-DX",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1400,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-36c50fafcd-SYNTH-DX-5W30-600020-ARD1R-transparent.png",
+        "sha256": "f6099e009a0b6f3b7733a91f70bceb6cc8dbc0f79c7a7d196d169d8d27177bdc",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-36c50fafcd-SYNTH-DX-5W30-600020-ARD1R.png",
+        "source_sha256": "77fca8ca3677500a2cea7d1349fb7a0a737b8eaa7ee9883f12e2090363d8c1d6",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            103,
+            15,
+            247,
+            322
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-097",
+      "brand": "Ardeca",
+      "name": "CERA-MIX XL",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1900,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-097-halo-clean-nov09.png",
+        "sha256": "c080044701f08e3d25cf0e30fe46e01f25df1da9f78fee17e8d30233c87e0b8c",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-116ad41a52-CERA-MIX%20XL%205W30%20603087-ARD1R.png",
+        "source_sha256": "41df25fa9273a14a03ca4ac13d5ca986db46bc57da361b3615e635ae78ee729f",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            101,
+            13,
+            249,
+            324
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-098",
+      "brand": "NGN",
+      "name": "SYNERGY PLUS",
+      "sae": "0W-30",
+      "volume_liters": 1,
+      "price_rub": 1800,
+      "image": {
+        "path": "/assets/images/products/transparent/ngn-synergy-plus-0w30-1l-official.png",
+        "sha256": "659afc0c361c9b8d6d714382c3fc20f5526e9e383dcb629baa7b6ab7b5790b33",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-synergy-plus-0w30-1l-official-original.jpeg",
+        "source_sha256": "edfd182ab167a4aee4e1dc9b39b95073fd00e4213575be7238bb36f5964c8006",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            130,
+            29,
+            664,
+            783
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-099",
+      "brand": "NGN",
+      "name": "GOLD A-LINE",
+      "sae": "5W-40",
+      "volume_liters": 1,
+      "price_rub": 1550,
+      "image": {
+        "path": "/assets/images/products/transparent/ngn-gold-a-line-5w40-1l-oil70.png",
+        "sha256": "dcae8fb8cecdd513fb958354aaf4f9993feef6fbd5fd6cb4ec13fc2d16a72310",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-gold-a-line-5w40-1l-oil70-original.jpeg",
+        "source_sha256": "da8cbb4fd1a5271da7ac37e91c8698db3ed081c4a620aa5621e3a86c99f6872e",
+        "grid_frame": {
+          "canvas": [
+            1200,
+            1200
+          ],
+          "bounds": [
+            192,
+            3,
+            1010,
+            1178
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-100",
+      "brand": "NGN",
+      "name": "A-LINE",
+      "sae": "5W-40",
+      "volume_liters": 4,
+      "price_rub": 4100,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-100-halo-clean-nov09.png",
+        "sha256": "6d8008da73d62cec2921ae43247498d97c943a96ddfb6bb930c6aedaf86df60e",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-d82af5b4f827.jpeg",
+        "source_sha256": "eec8a1dc2b674d5a669f091fcf5262ec2e8daf56f0dad0923dbc93aeef3b26ea",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            178,
+            70,
+            622,
+            720
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-101",
+      "brand": "NGN",
+      "name": "FUTURE",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 5800,
+      "image": {
+        "path": "/assets/images/products/transparent/ngn-fce92a8ef7-NGN_015.1-transparent.png",
+        "sha256": "4064011d381728483e6887d372e3d2d10a8328634cb0a2c856260b1c683f856a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-fce92a8ef7-NGN_015.1.jpg",
+        "source_sha256": "12d3c6c0413e6899d1bfb64451bf0e0abdf997bf8c9ab36dcd07a8492b221ca7",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            80,
+            30,
+            719,
+            783
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-102",
+      "brand": "NGN",
+      "name": "FUTURE",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1590,
+      "image": {
+        "path": "/assets/images/products/transparent/ngn-b2902ab941-NGN_015-transparent.png",
+        "sha256": "1f826928b378ab69c48503bc2c7a7c1e61676e0ff0407500168df25417d0a048",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ngn-b2902ab941-NGN_015.jpg",
+        "source_sha256": "9afe8d4d7d73515934e04c83556729abc4da33a2460674bdb33b839917fb31d5",
+        "grid_frame": {
+          "canvas": [
+            800,
+            800
+          ],
+          "bounds": [
+            130,
+            32,
+            668,
+            784
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-103",
+      "brand": "Ardeca",
+      "name": "SYNTH-PRO",
+      "sae": "0W-20",
+      "volume_liters": 4,
+      "price_rub": 6400,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-103-user-nov09.png",
+        "sha256": "d4943c768729f5000229f05ae730a5a55dfefb3d4d217c879faed6d073e040a0",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-103-user-nov09-original.jpeg",
+        "source_sha256": "c7c92f2a8e2a72e67dd4fce4906955ea2fea70291795bf56f37ad54b428d5a73",
+        "grid_frame": {
+          "canvas": [
+            800,
+            533
+          ],
+          "bounds": [
+            215,
+            19,
+            611,
+            506
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-104",
+      "brand": "Ardeca",
+      "name": "Synth-V",
+      "sae": "0W-30",
+      "volume_liters": 4,
+      "price_rub": 7050,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-104-user-nov09.png",
+        "sha256": "29ef8186bf85985f9e96a92f66d1e8df320ce2a435592714832f55bcd5502e88",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-104-user-nov09-original.jpeg",
+        "source_sha256": "a6601fbbd21e2da88fc35cfb5ae78c1979d50d47cd38e186291c20510c643af6",
+        "grid_frame": {
+          "canvas": [
+            1800,
+            1200
+          ],
+          "bounds": [
+            476,
+            39,
+            1377,
+            1142
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-105",
+      "brand": "Ardeca",
+      "name": "SYNTH-PRO",
+      "sae": "5W-30",
+      "volume_liters": 1,
+      "price_rub": 1450,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-47730eb053-SYNTH-PRO-5W30-600001-ARD1R-transparent.png",
+        "sha256": "3627e7c2a2fca2fc4f3f912775628a2a0fd8ffc4d3a49dff7147ef685a55fdb9",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-47730eb053-SYNTH-PRO-5W30-600001-ARD1R.png",
+        "source_sha256": "ceafb6ce67bc07211bb7cd1d84f959e504167b1af06bd9c93e84c953709182ce",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            103,
+            15,
+            247,
+            322
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-106",
+      "brand": "Ardeca",
+      "name": "SYNTH-PRO",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1710,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-93ae4e8123-PACKSHOT%2520P01321-ARD-transparent.png",
+        "sha256": "53b12df49e4ba0b62eaad58c25657b5f4bec5d903548d96e325799e9bb620b14",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-93ae4e8123-PACKSHOT%20P01321-ARD.png",
+        "source_sha256": "358d5f7f92dd245825f4b91e729dd4d8188260bdaceeaf014012bc7945d3914d",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            103,
+            15,
+            247,
+            322
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-107",
+      "brand": "Ardeca",
+      "name": "Synth-V",
+      "sae": "0W-30",
+      "volume_liters": 1,
+      "price_rub": 1900,
+      "image": {
+        "path": "/assets/images/products/transparent/ardeca-c0b071f482-SYNTH-V-0W30-600031-ARD1R-transparent.png",
+        "sha256": "970f8a99d0b09d33b64c4913569c3dfe5e5ad212a7910a18f5add9e39213b57a",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/ardeca-c0b071f482-SYNTH-V-0W30-600031-ARD1R.png",
+        "source_sha256": "b3939d550eb36b5d921e9bc650aa3bbd892d82bd2241aa6e82f37951c7f36afe",
+        "grid_frame": {
+          "canvas": [
+            350,
+            350
+          ],
+          "bounds": [
+            103,
+            15,
+            247,
+            322
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-108",
+      "brand": "Ardeca",
+      "name": "SYNTH-C5",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 1650,
+      "image": {
+        "path": "/assets/images/products/transparent/oil-108-user-nov09.png",
+        "sha256": "6d7bbe7ca4fea02dbdaa81b9346a00ed4220d02b48ef0f434c4e5902df555929",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "removed_background",
+        "source_path": "/assets/images/products/oil-108-user-nov09-original.png",
+        "source_sha256": "6b35540b7eee7e943618af7b60344e279ff37650c61728626394360104589ea3",
+        "grid_frame": {
+          "canvas": [
+            900,
+            1200
+          ],
+          "bounds": [
+            467,
+            192,
+            841,
+            987
+          ]
+        }
+      },
+      "price_valid_from": "2026-09-01"
+    },
+    {
+      "id": "oil-109",
+      "brand": "Motul",
+      "name": "H-TECH100Plus",
+      "sae": "5W-30",
+      "volume_liters": 4,
+      "price_rub": 6950,
+      "image": {
+        "path": "/assets/images/products/motul-htech-5w30-4l-ph-original.png",
+        "sha256": "c9eb3555ead7a37c30c03f04ce33467b6e872ca9649132d7d3bb329f2857d883",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/motul-htech-5w30-4l-ph-original.png",
+        "source_sha256": "c9eb3555ead7a37c30c03f04ce33467b6e872ca9649132d7d3bb329f2857d883",
+        "grid_frame": {
+          "canvas": [
+            600,
+            934
+          ],
+          "bounds": [
+            9,
+            11,
+            584,
+            924
+          ]
+        }
+      }
+    },
+    {
+      "id": "oil-110",
+      "brand": "Motul",
+      "name": "H-TECH100Plus",
+      "sae": "0W-20",
+      "volume_liters": 1,
+      "price_rub": 2550,
+      "image": {
+        "path": "/assets/images/products/motul-htech100-plus-0w20-1l-nov08-original.png",
+        "sha256": "0e7ca28afe16055c6bfe7cc7c8dbb51be601d95e8164884fe9fdd6f1858facc9",
+        "scope": "exact",
+        "required_caption": null,
+        "background_mode": "native_alpha",
+        "source_path": "/assets/images/products/motul-htech100-plus-0w20-1l-nov08-original.png",
+        "source_sha256": "0e7ca28afe16055c6bfe7cc7c8dbb51be601d95e8164884fe9fdd6f1858facc9",
+        "grid_frame": {
+          "canvas": [
+            600,
+            1073
+          ],
+          "bounds": [
+            0,
+            0,
+            600,
+            1073
+          ]
+        }
+      }
+    }
+  ]
+}

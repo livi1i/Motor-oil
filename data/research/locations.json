@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "business": "Motor Oil",
+  "scope": "Five supplied Motor Oil locations only. User classifications and URL coordinates; independently opened primary cards for addresses/name/type. No pricing/contact/hours scope.",
+  "status": "pending_fact_checker",
+  "integration_allowed": false,
+  "checked_at": "2026-11-05T18:17:14.096151+00:00",
+  "tab_order": [
+    "oils",
+    "sto",
+    "wash"
+  ],
+  "locations": [
+    {
+      "id": "70000001043352451",
+      "name": "Motor Oil",
+      "type": "sto",
+      "type_label": "СТО",
+      "city": "Псков",
+      "address": "Инженерная улица, 102 к31",
+      "lat": 57.839824,
+      "lng": 28.355771,
+      "cardURL": "https://2gis.ru/pskov/firm/70000001043352451",
+      "routeURL": "https://2gis.ru/pskov/directions/points/%7C28.355771%2C57.839824%3B70000001043352451",
+      "source": {
+        "address": "https://2gis.ru/pskov/firm/70000001043352451",
+        "classification": "explicit_user_assignment_confirmed_by_card_category",
+        "coordinates": "explicit_user_url",
+        "evidence_file": "work/researcher/evidence/70000001043352451.json",
+        "evidence_sha256": "6ad11cdab1fb4108fffe842361f65e58d63b56a5e8fde771602071d0e53f03bd",
+        "web_crawl_recency": "2 weeks ago"
+      },
+      "checked_at": "2026-11-05T18:17:14.096151+00:00",
+      "status": "observed_pending_independent_check"
+    },
+    {
+      "id": "12666903233200792",
+      "name": "Motor Oil",
+      "type": "sto",
+      "type_label": "СТО",
+      "city": "Псков",
+      "address": "Советская улица, 21в",
+      "lat": 57.814307,
+      "lng": 28.334251,
+      "cardURL": "https://2gis.ru/pskov/firm/12666903233200792",
+      "routeURL": "https://2gis.ru/pskov/directions/points/%7C28.334251%2C57.814307%3B12666903233200792",
+      "source": {
+        "address": "https://2gis.ru/pskov/firm/12666903233200792",
+        "classification": "explicit_user_assignment_confirmed_by_card_category",
+        "coordinates": "explicit_user_url",
+        "evidence_file": "work/researcher/evidence/12666903233200792.json",
+        "evidence_sha256": "dbd1cd1fdfba53c5a6d4dc83b213ca621f140f1066fbd51cb2fcdbab469a0d21",
+        "web_crawl_recency": "3 weeks ago"
+      },
+      "checked_at": "2026-11-05T18:17:14.096151+00:00",
+      "status": "observed_pending_independent_check"
+    },
+    {
+      "id": "12666903233200819",
+      "name": "Motor Oil",
+      "type": "oils",
+      "type_label": "Магазин масел",
+      "city": "Псков",
+      "address": "Улица Киселёва, 16",
+      "lat": 57.81711,
+      "lng": 28.312944,
+      "cardURL": "https://2gis.ru/pskov/firm/12666903233200819",
+      "routeURL": "https://2gis.ru/pskov/directions/points/%7C28.312944%2C57.81711%3B12666903233200819",
+      "source": {
+        "address": "https://2gis.ru/pskov/firm/12666903233200819",
+        "classification": "explicit_user_assignment_confirmed_by_card_category",
+        "coordinates": "explicit_user_url",
+        "evidence_file": "work/researcher/evidence/12666903233200819.json",
+        "evidence_sha256": "cfa8bcf1fc5f1a379fc162aecde2e8926af47ac361823355a1821f6f17704d99",
+        "web_crawl_recency": "6 months ago"
+      },
+      "checked_at": "2026-11-05T18:17:14.096151+00:00",
+      "status": "observed_pending_independent_check"
+    },
+    {
+      "id": "70000001053079552",
+      "name": "Motor Oil",
+      "type": "oils",
+      "type_label": "Магазин масел",
+      "city": "Псков",
+      "address": "Улица Леона Поземского, 9",
+      "lat": 57.824999,
+      "lng": 28.332653,
+      "cardURL": "https://2gis.ru/pskov/firm/70000001053079552",
+      "routeURL": "https://2gis.ru/pskov/directions/points/%7C28.332653%2C57.824999%3B70000001053079552",
+      "source": {
+        "address": "https://2gis.ru/pskov/firm/70000001053079552",
+        "classification": "explicit_user_assignment_confirmed_by_card_category",
+        "coordinates": "explicit_user_url",
+        "evidence_file": "work/researcher/evidence/70000001053079552.json",
+        "evidence_sha256": "c3ee12b4c4c3823347b36cf10a8e20abba3e4835dc037e1e4b8c57277f9b270c",
+        "web_crawl_recency": "6 months ago"
+      },
+      "checked_at": "2026-11-05T18:17:14.096151+00:00",
+      "status": "observed_pending_independent_check"
+    },
+    {
+      "id": "70000001049590525",
+      "name": "Motor Oil",
+      "type": "wash",
+      "type_label": "Мойка",
+      "city": "Псков",
+      "address": "Инженерная улица, 102",
+      "lat": 57.840526,
+      "lng": 28.355399,
+      "cardURL": "https://2gis.ru/pskov/firm/70000001049590525",
+      "routeURL": "https://2gis.ru/pskov/directions/points/%7C28.355399%2C57.840526%3B70000001049590525",
+      "source": {
+        "address": "https://2gis.ru/pskov/firm/70000001049590525",
+        "classification": "explicit_user_assignment_confirmed_by_card_category",
+        "coordinates": "explicit_user_url",
+        "evidence_file": "work/researcher/evidence/70000001049590525.json",
+        "evidence_sha256": "d546a2a028c8e2a157dc2ed38d4f78127d2997037fbfae27a7a4f43fc8faeaf3",
+        "web_crawl_recency": "last week"
+      },
+      "checked_at": "2026-11-05T18:17:14.096151+00:00",
+      "status": "observed_pending_independent_check"
+    }
+  ],
+  "wash_address_missing": false,
+  "limitations": [
+    "Snapshot banner simplifies first STO address to Инженерная,102; card is more precise:102к31. Use precise observed card address.",
+    "Coordinates come from user links, not an invented geocode.",
+    "First user link display text had a malformed latitude; actual href and explicit task use57.839824.",
+    "2GIS web crawl recency ranges from last week to6months; report observation date honestly without asserting live accuracy."
+  ]
+}
