@@ -80,7 +80,7 @@ function syncVideo(){
   video.autoplay=shouldPlay;
   if(visible&&!video.hasAttribute('src')){
     video.preload='metadata';
-    video.src='/assets/videos/'+panels[active].file+'.mp4';
+    video.src='./assets/videos/'+panels[active].file+'.mp4';
   }
   if(shouldPlay&&video.paused){
     forceMute();
@@ -152,15 +152,15 @@ function loadMap(){
     document.head.append(element);
   });
   mapReady=Promise.all([
-    addAsset('link',{rel:'stylesheet',href:'/public/vendor/leaflet.css'}),
-    addAsset('script',{src:'/public/vendor/leaflet.js'}),
+    addAsset('link',{rel:'stylesheet',href:'./public/vendor/leaflet.css'}),
+    addAsset('script',{src:'./public/vendor/leaflet.js'}),
   ]).then(mountMap).catch(()=>{document.querySelector('.map-error').hidden=false;});
   return mapReady;
 }
 
 async function loadLocations(){
   try{
-    const response=await fetch('/data/research/locations.json');
+    const response=await fetch('./data/research/locations.json');
     if(!response.ok)throw Error('locations');
     const data=await response.json();
     locations=data.locations.map(location=>location.type==='wash'?{...location,type_label:'Автомойка'}:location);
