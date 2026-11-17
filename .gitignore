@@ -1,0 +1,7 @@
+node_modules/
+.codex/
+work/
+reports/
+assets/videos/originals/
+assets/images/**/originals/
+*.log

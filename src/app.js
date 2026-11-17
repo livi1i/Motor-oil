@@ -34,12 +34,19 @@ function updateHeaderHours(){
   const allKnown=branches.length>0&&branches.every(branch=>branch.state!=='unknown');
   const sharedHours=allKnown&&branches.every(branch=>branch.hours===branches[0].hours)?branches[0].hours:'';
   const state=open?'open':allKnown?'closed':'unknown';
-  const label=state==='unknown'?'График уточняется':open?(open===branches.length?'Открыто':allKnown?'Открыто '+open+' из '+branches.length:'Открыт '+open+' адрес'):'Закрыто';
-  const summary=sharedHours?label+' · '+sharedHours:label;
+  const partiallyOpen=allKnown&&open===1&&branches.length>1;
+  const shownBranches=partiallyOpen?branches.filter(branch=>branch.state==='open'):branches;
+  const schedules=[...new Set(shownBranches.map(branch=>branch.hours).filter(Boolean))];
+  const label=state==='unknown'?'График уточняется':state==='open'?'Открыто':'Закрыто';
+  const summary=[label,partiallyOpen?shownBranches[0].address.replace(' улица','').replace('Улица ',''):'',schedules.join(' / ')].filter(Boolean).join(' · ');
   const renderKey=JSON.stringify({summary,branches});
   if(renderKey===renderedHours)return;
   renderedHours=renderKey;
-  hoursSummary.textContent=summary;
+  hoursSummary.replaceChildren();
+  const summaryText=document.createElement('span');summaryText.className='hours-summary-text';summaryText.textContent=summary;
+  const chevron=document.createElement('span');chevron.className='hours-chevron';chevron.setAttribute('aria-hidden','true');chevron.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
+  hoursSummary.append(summaryText,chevron);
+  hoursSummary.setAttribute('aria-label',summary+'. Посмотреть график всех адресов');
   hoursSummary.dataset.state=state;
   const states={open:'Открыто',closed:'Закрыто',unknown:'График уточняется'};
   hoursAddresses.replaceChildren(...branches.map(branch=>{
@@ -137,25 +144,43 @@ function chooseDirection(key,focus=false){if(!panels[key])return;const direction
 tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>{if(active!==tab.dataset.direction)chooseDirection(tab.dataset.direction);returnToDirection();});tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;if(event.key==='ArrowLeft')next=(index-1+tabs.length)%tabs.length;if(event.key==='Home')next=0;if(event.key==='End')next=tabs.length-1;if(next!==undefined){event.preventDefault();chooseDirection(tabs[next].dataset.direction,true);returnToDirection();}});});
 const htmlEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function renderList(){const target=document.querySelector('#location-list');target.replaceChildren();locations.filter(loc=>filter==='all'||loc.type===filter).forEach(loc=>{const entry=document.createElement('article');entry.className='location-entry';entry.dataset.id=loc.id;const button=document.createElement('button');button.type='button';button.className='location-focus';button.innerHTML='<span class="location-type">'+htmlEscape(loc.type_label)+'</span><span class="location-address">'+htmlEscape(loc.address)+'</span>';button.setAttribute('aria-label','Показать на карте: '+loc.type_label+', '+loc.address);button.addEventListener('click',()=>focusLocation(loc));const link=document.createElement('a');link.className='location-link';link.href=loc.cardURL;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Открыть в 2ГИС: '+loc.type_label+', '+loc.address);link.textContent='↗';entry.append(button,link);target.append(entry);});}
-async function focusLocation(loc){document.querySelectorAll('.location-entry').forEach(el=>el.classList.toggle('selected',el.dataset.id===loc.id));await loadMap();if(map){map.setView([loc.lat,loc.lng],16,{animate:!reduced.matches});markers.get(loc.id)?.openPopup();}}
-function setFilter(key){filter=key;document.querySelectorAll('[data-filter]').forEach(el=>{el.classList.toggle('selected',el.dataset.filter===filter);el.setAttribute('aria-pressed',el.dataset.filter===filter);});renderList();updateMarkers();}
-document.querySelectorAll('[data-filter]').forEach(el=>el.addEventListener('click',()=>setFilter(el.dataset.filter)));document.querySelector('#direction-action').addEventListener('click',()=>setFilter(active));
-function updateMarkers(){if(!map)return;group.clearLayers();markers.clear();const shown=locations.filter(loc=>filter==='all'||loc.type===filter);shown.forEach(loc=>{const icon=L.divIcon({className:'',html:'<div class="map-pin '+loc.type+'">'+({oils:'М',sto:'С',wash:'А'}[loc.type])+'</div>',iconSize:[32,32],iconAnchor:[16,32]});const marker=L.marker([loc.lat,loc.lng],{icon,alt:loc.type_label+', '+loc.address,keyboard:true,title:loc.type_label+', '+loc.address});marker.bindTooltip(htmlEscape(loc.type_label),{permanent:true,className:'location-tooltip',direction:loc.id==='70000001043352451'?'left':'right',offset:[loc.id==='70000001043352451'?-15:15,-17]});marker.bindPopup('<b>'+htmlEscape(loc.type_label)+'</b><br>'+htmlEscape(loc.address)+'<br><a href="'+htmlEscape(loc.cardURL)+'" target="_blank" rel="noopener">Открыть карточку в 2ГИС ↗</a>');marker.on('click',()=>{document.querySelectorAll('.location-entry').forEach(el=>el.classList.toggle('selected',el.dataset.id===loc.id));});group.addLayer(marker);markers.set(loc.id,marker);});if(shown.length===1)map.setView([shown[0].lat,shown[0].lng],16);else if(shown.length)map.fitBounds(group.getBounds(),{padding:[45,45],maxZoom:14,animate:false});}
-function mountMap(){map=L.map('map',{scrollWheelZoom:false,zoomControl:true,attributionControl:true});L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'}).addTo(map).on('tileerror',()=>{document.querySelector('.map-error').hidden=false;}).on('tileload',()=>{document.querySelector('.map-error').hidden=true;});group=L.featureGroup().addTo(map);updateMarkers();new ResizeObserver(()=>map.invalidateSize()).observe(document.querySelector('#map'));}
-let mapReady;
+let selectedLocation=null;
+async function focusLocation(loc){
+ selectedLocation=loc;
+ document.querySelectorAll('.location-entry').forEach(entry=>{entry.classList.toggle('selected',entry.dataset.id===loc.id);});
+ const selectedEntry=document.querySelector('.location-entry.selected');
+ if(selectedEntry&&!reduced.matches){selectedEntry.getAnimations().forEach(animation=>animation.cancel());selectedEntry.animate([{transform:'translateY(0)'},{transform:'translateY(-7px)',offset:.45},{transform:'translateY(0)'}],{duration:450,easing:'cubic-bezier(.2,.7,.3,1)'});}
+ const mapShell=document.querySelector('.map-shell');mapShell.classList.remove('map-changing');void mapShell.offsetWidth;mapShell.classList.add('map-changing');
+ await loadMap();
+ updateMarkers();
+}
+function setFilter(key){
+ filter=key;selectedLocation=null;
+ document.querySelectorAll('[data-filter]').forEach(button=>{button.classList.toggle('selected',button.dataset.filter===filter);button.setAttribute('aria-pressed',button.dataset.filter===filter);});
+ renderList();updateMarkers();
+}
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>setFilter(button.dataset.filter)));
+document.querySelector('#direction-action').addEventListener('click',()=>setFilter(active));
+function updateMarkers(){
+ if(!map)return;
+ const shown=locations.filter(loc=>filter==='all'||loc.type===filter);
+ if(!shown.length)return;
+ const center=selectedLocation||{lng:shown.reduce((sum,loc)=>sum+loc.lng,0)/shown.length,lat:shown.reduce((sum,loc)=>sum+loc.lat,0)/shown.length};
+ const params=new URLSearchParams({ll:center.lng+','+center.lat,z:selectedLocation?'17':shown.length===1?'16':'12',l:'map',pt:shown.map(loc=>loc.lng+','+loc.lat+',pm2'+({oils:'rd',sto:'gr',wash:'bl'}[loc.type])+'m').join('~')});
+ const next='https://yandex.ru/map-widget/v1/?'+params;
+ if(map.src!==next)map.src=next;
+ map.title=selectedLocation?selectedLocation.type_label+' — '+selectedLocation.address:'Адреса Motor Oil на Яндекс Картах';
+ const mapLink=document.querySelector('#map-open-yandex');
+ if(mapLink){mapLink.href='https://yandex.ru/maps/?'+params;mapLink.textContent=(selectedLocation?selectedLocation.address+' · ':'')+'Открыть Яндекс Карты ↗';}
+}
 function loadMap(){
-  if(mapReady)return mapReady;
-  const addAsset=(tag,properties)=>new Promise((resolve,reject)=>{
-    const element=Object.assign(document.createElement(tag),properties);
-    element.addEventListener('load',resolve,{once:true});
-    element.addEventListener('error',reject,{once:true});
-    document.head.append(element);
-  });
-  mapReady=Promise.all([
-    addAsset('link',{rel:'stylesheet',href:'./public/vendor/leaflet.css'}),
-    addAsset('script',{src:'./public/vendor/leaflet.js'}),
-  ]).then(mountMap).catch(()=>{document.querySelector('.map-error').hidden=false;});
-  return mapReady;
+ if(!map){
+  map=document.createElement('iframe');map.className='yandex-map';map.loading='lazy';map.referrerPolicy='strict-origin-when-cross-origin';map.allowFullscreen=true;
+  map.addEventListener('error',()=>{document.querySelector('.map-error').hidden=false;});
+  document.querySelector('#map').replaceChildren(map);
+  const mapLink=document.createElement('a');mapLink.id='map-open-yandex';mapLink.className='map-open-yandex';mapLink.target='_blank';mapLink.rel='noopener noreferrer';document.querySelector('.map-shell').append(mapLink);updateMarkers();
+ }
+ return Promise.resolve();
 }
 
 async function loadLocations(){
@@ -185,64 +210,68 @@ loadLocations();
 
 // STO-only catalogue. All names and prices are generated directly from the accepted services.json.
 function syncServicesVisibility(){document.querySelector('#oil-catalogue').hidden=active!=='oils';document.querySelector('.oils-nav').hidden=active!=='oils';const selected=active==='sto';document.querySelector('#services').hidden=!selected;document.querySelector('.sto-nav').hidden=!selected;}
+const serviceImagePaths={"sto-fuel-01":"./assets/images/services-unique/sto-fuel-01.jpg","sto-fuel-02":"./assets/images/services-unique/sto-fuel-02.jpg","sto-fuel-03":"./assets/images/services-unique/sto-fuel-03.jpg","sto-fuel-04":"./assets/images/services-unique/sto-fuel-04.jpg","sto-fuel-05":"./assets/images/services-unique/sto-fuel-05.jpg","sto-fuel-06":"./assets/images/services-unique/sto-fuel-06.jpg","sto-engine-01":"./assets/images/services-unique/sto-engine-01.jpg","sto-engine-02":"./assets/images/services-unique/sto-engine-02.jpg","sto-engine-03":"./assets/images/services-unique/sto-engine-03.jpg","sto-engine-04":"./assets/images/services-unique/sto-engine-04.jpg","sto-engine-05":"./assets/images/services-unique/sto-engine-05.jpg","sto-engine-06":"./assets/images/services-unique/sto-engine-06.jpg","sto-engine-07":"./assets/images/services-unique/sto-engine-07.jpg","sto-engine-08":"./assets/images/services-unique/sto-engine-08.jpg","sto-engine-09":"./assets/images/services-unique/sto-engine-09.jpg","sto-engine-10":"./assets/images/services-unique/sto-engine-10.jpg","sto-engine-11":"./assets/images/services-unique/sto-engine-11.jpg","sto-engine-12":"./assets/images/services-unique/sto-engine-12.jpg","sto-engine-13":"./assets/images/services-unique/sto-engine-13.jpg","sto-engine-14":"./assets/images/services-unique/sto-engine-14.jpg","sto-engine-15":"./assets/images/services-unique/sto-engine-15.jpg","sto-engine-16":"./assets/images/services-unique/sto-engine-16.jpg","sto-steering-01":"./assets/images/services-unique/sto-steering-01.jpg","sto-steering-02":"./assets/images/services-unique/sto-steering-02.jpg","sto-steering-03":"./assets/images/services-unique/sto-steering-03.jpg","sto-steering-04":"./assets/images/services-realism/sto-steering-04.jpg","sto-steering-05":"./assets/images/services-unique/sto-steering-05.jpg","sto-cooling-01":"./assets/images/services-unique/sto-cooling-01.jpg","sto-cooling-02":"./assets/images/services-unique/sto-cooling-02-gloves-v2.jpg","sto-cooling-03":"./assets/images/services-unique/sto-cooling-03.jpg","sto-cooling-04":"./assets/images/services-unique/sto-cooling-04.jpg","sto-cooling-05":"./assets/images/services-unique/sto-cooling-05.jpg","sto-cooling-06":"./assets/images/services-realism/sto-cooling-06-no-faces.jpg","sto-suspension-01":"./assets/images/services-realism/sto-suspension-01-no-faces.jpg","sto-suspension-02":"./assets/images/services-realism/sto-suspension-02.jpg","sto-suspension-03":"./assets/images/services-unique/sto-suspension-03.jpg","sto-suspension-04":"./assets/images/services-unique/sto-suspension-04.jpg","sto-suspension-05":"./assets/images/services-unique/sto-suspension-05.jpg","sto-suspension-06":"./assets/images/services-unique/sto-suspension-06.jpg","sto-suspension-07":"./assets/images/services-unique/sto-suspension-07.jpg","sto-suspension-08":"./assets/images/services-realism/sto-suspension-08.jpg","sto-suspension-09":"./assets/images/services-unique/sto-suspension-09.jpg","sto-suspension-10":"./assets/images/services-unique/sto-suspension-10.jpg","sto-suspension-11":"./assets/images/services-unique/sto-suspension-11.jpg","sto-suspension-12":"./assets/images/services-unique/sto-suspension-12.jpg","sto-suspension-13":"./assets/images/services-unique/sto-suspension-13-gloves-v2.jpg","sto-suspension-14":"./assets/images/services-unique/sto-suspension-14.jpg","sto-suspension-15":"./assets/images/services-unique/sto-suspension-15.jpg","sto-suspension-16":"./assets/images/services-unique/sto-suspension-16.jpg","sto-suspension-17":"./assets/images/services-unique/sto-suspension-17.jpg","sto-suspension-18":"./assets/images/services-unique/sto-suspension-18.jpg","sto-suspension-19":"./assets/images/services-unique/sto-suspension-19.jpg","sto-suspension-20":"./assets/images/services-unique/sto-suspension-20.jpg","sto-suspension-21":"./assets/images/services-unique/sto-suspension-21.jpg","sto-suspension-22":"./assets/images/services-unique/sto-suspension-22.jpg","sto-suspension-23":"./assets/images/services-unique/sto-suspension-23.jpg","sto-suspension-24":"./assets/images/services-unique/sto-suspension-24.jpg","sto-diagnostics-01":"./assets/images/services-realism/sto-diagnostics-01.jpg","sto-diagnostics-02":"./assets/images/services-realism/sto-diagnostics-02-no-faces.jpg","sto-diagnostics-03":"./assets/images/services-unique/sto-diagnostics-03.jpg","sto-maintenance-01":"./assets/images/services-realism/sto-maintenance-01.jpg","sto-maintenance-02":"./assets/images/services-unique/sto-maintenance-02.jpg","sto-maintenance-03":"./assets/images/services-unique/sto-maintenance-03.jpg","sto-maintenance-04":"./assets/images/services-realism/sto-maintenance-04.jpg","sto-maintenance-05":"./assets/images/services-realism/sto-maintenance-05-no-faces.jpg","sto-maintenance-06":"./assets/images/services-unique/sto-maintenance-06.jpg","sto-maintenance-07":"./assets/images/services-unique/sto-maintenance-07.jpg","sto-maintenance-08":"./assets/images/services-unique/sto-maintenance-08.jpg","sto-maintenance-09":"./assets/images/services-realism/sto-maintenance-09.jpg","sto-maintenance-10":"./assets/images/services-unique/sto-maintenance-10.jpg","sto-maintenance-11":"./assets/images/services-realism/sto-maintenance-11-branded-hands-v2.jpg","sto-maintenance-12":"./assets/images/services-unique/sto-maintenance-12.jpg","sto-maintenance-13":"./assets/images/services-unique/sto-maintenance-13.jpg","sto-fluids-01":"./assets/images/services-realism/sto-fluids-01.jpg","sto-fluids-02":"./assets/images/services-realism/sto-fluids-02.jpg","sto-fluids-03":"./assets/images/services-realism/sto-fluids-03.jpg","sto-fluids-04":"./assets/images/services-realism/sto-fluids-04.jpg","group-tyres":"./assets/images/services-realism/group-tyres.jpg","group-lights":"./assets/images/services-unique/group-lights.jpg","group-heater":"./assets/images/services-realism/group-heater.jpg","group-fuel":"./assets/images/services-unique/group-fuel.jpg","group-engine":"./assets/images/services-unique/group-engine.jpg","group-ac":"./assets/images/services-realism/group-ac.jpg","group-transmission":"./assets/images/services-realism/group-transmission.jpg","group-steering":"./assets/images/services-unique/group-steering.jpg","group-cooling":"./assets/images/services-unique/group-cooling.jpg","group-alignment":"./assets/images/services-unique/group-alignment.jpg","group-suspension":"./assets/images/services-realism/group-suspension.jpg","group-diagnostics":"./assets/images/services-realism/group-diagnostics.jpg","group-maintenance":"./assets/images/services-unique/group-maintenance.jpg","group-fluids":"./assets/images/services-realism/group-fluids.jpg"};
+function serviceIllustration(group,name,jobId=null){
+ const figure=document.createElement('figure');figure.className='service-photo';
+ const image=document.createElement('img');image.src=serviceImagePaths[jobId||'group-'+group];image.alt='Иллюстрация — '+name;image.width=900;image.height=600;image.loading='lazy';image.decoding='async';
+ figure.append(image);return figure;
+}
+for(const group of document.querySelectorAll('[data-service-group]')){
+ group.prepend(serviceIllustration(group.dataset.serviceGroup,group.dataset.serviceName));
+ const details=group.querySelector('.service-price-list');
+ if(!details)continue;
+ const jobs=document.createElement('div');jobs.className='service-jobs';
+ for(const row of details.querySelectorAll('[data-price-row]')){
+  const tile=document.createElement('article');tile.className='service-job';tile.dataset.priceRow=row.dataset.priceRow;
+  const heading=document.createElement('h4');heading.textContent=row.querySelector('th').childNodes[0].textContent.trim();
+  const price=document.createElement('strong');price.textContent=row.querySelector('td').textContent;
+  const button=document.createElement('button');button.type='button';button.className='service-job-action';button.textContent='Обсудить работу ↗';
+  button.addEventListener('click',()=>{document.querySelector('#service-inquiry-name').textContent=heading.textContent;document.querySelector('#service-request-text').value='Здравствуйте! Интересует работа «'+heading.textContent+'». Подскажите стоимость и условия записи.';resetServiceInquiry();document.querySelector('#service-dialog').showModal();});
+  tile.append(serviceIllustration(group.dataset.serviceGroup,heading.textContent,row.dataset.priceRow),heading);
+  const condition=row.querySelector('.service-condition');if(condition)tile.append(condition.cloneNode(true));
+  tile.append(price,button);jobs.append(tile);
+ }
+ details.querySelector('.service-detail').replaceChildren(jobs);
+}
 const serviceSearch=document.querySelector('#service-search');
 const serviceReset=document.querySelector('#service-reset');
 const serviceExpand=document.querySelector('#service-expand');
-const serviceCards=[...document.querySelectorAll('[data-service-group]')].map(card=>({
-  card,
-  name:card.dataset.serviceName,
-  description:card.querySelector('.service-description').textContent,
-  rows:[...card.querySelectorAll('[data-price-row]')],
-  details:card.querySelector('.service-price-list'),
-}));
+serviceExpand.remove();
+const serviceCards=[...document.querySelectorAll('[data-service-group]')].map(card=>({card,name:card.dataset.serviceName,description:card.querySelector('.service-description').textContent,rows:[...card.querySelectorAll('[data-price-row]')]}));
+const categoryNav=document.createElement('div');categoryNav.className='service-categories';categoryNav.setAttribute('role','group');categoryNav.setAttribute('aria-label','Разделы услуг СТО');
+const workGrid=document.createElement('div');workGrid.className='service-work-grid';
+document.querySelector('.service-tools').after(categoryNav);
+document.querySelector('.service-groups').after(workGrid);
+let serviceCategory='all';
+const categoryLabel=document.createElement('label');categoryLabel.className='service-category-label';categoryLabel.htmlFor='service-category';categoryLabel.textContent='Раздел услуг';
+const categorySelect=document.createElement('select');categorySelect.id='service-category';categorySelect.className='service-category-select';categoryNav.append(categoryLabel,categorySelect);
+categorySelect.addEventListener('change',()=>{serviceCategory=categorySelect.value;searchServices();});
+for(const item of [{name:'Все направления',key:'all'},...serviceCards.map(item=>({name:item.name,key:item.card.dataset.serviceGroup}))]){
+ const option=document.createElement('option');option.value=item.key;option.textContent=item.name;categorySelect.append(option);
+}
+for(const item of serviceCards){
+ for(const row of item.rows){row.dataset.serviceCategory=item.card.dataset.serviceGroup;workGrid.append(row);}
+ item.card.querySelector('.service-price-list')?.remove();
+ if(item.rows.length){const button=document.createElement('button');button.type='button';button.className='service-category-open';button.textContent='Выбрать работу →';button.addEventListener('click',()=>{serviceCategory=item.card.dataset.serviceGroup;searchServices();categoryNav.scrollIntoView({behavior:reduced.matches?'auto':'smooth',block:'start'});});item.card.append(button);}
+}
 const serviceNormalize=text=>text.toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/\s+/g,' ').trim();
-const visibleDetails=()=>serviceCards.filter(({card,details})=>details&&!card.hidden).map(({details})=>details);
-
-function updateExpandButton(){
-  const details=visibleDetails();
-  serviceExpand.hidden=details.length===0;
-  serviceExpand.textContent=details.length&&details.every(item=>item.open)?'Свернуть все':'Раскрыть все';
-}
-
 function searchServices(){
-  const query=serviceNormalize(serviceSearch.value);
-  const words=query.split(' ').filter(Boolean);
-  const matches=text=>words.every(word=>serviceNormalize(text).includes(word));
-  let groups=0, rows=0;
-  for(const item of serviceCards){
-    const headingMatches=matches(item.name+' '+item.description);
-    let matchingRows=0;
-    for(const row of item.rows){
-      const match=headingMatches||matches(row.textContent);
-      row.hidden=!match;
-      if(match)matchingRows++;
-    }
-    const match=headingMatches||matchingRows>0;
-    item.card.hidden=!match;
-    if(item.details)item.details.open=Boolean(query&&match);
-    if(match){
-      groups++;
-      rows+=matchingRows;
-    }
-  }
-  serviceReset.hidden=!query;
-  document.querySelector('.service-empty').hidden=groups!==0;
-  document.querySelector('#service-results').textContent=query?'Найдено разделов: '+groups+' · Работ: '+rows:'14 разделов · 77 работ в подробном прайсе';
-  updateExpandButton();
+ const query=serviceNormalize(serviceSearch.value);const words=query.split(' ').filter(Boolean);const matches=text=>words.every(word=>serviceNormalize(text).includes(word));
+ let groups=0,works=0;
+ for(const item of serviceCards){
+  const chosen=serviceCategory==='all'||serviceCategory===item.card.dataset.serviceGroup;
+  item.card.hidden=!(chosen&&!query&&(serviceCategory==='all'||!item.rows.length));if(!item.card.hidden)groups++;
+  for(const row of item.rows){row.hidden=!(chosen&&(Boolean(query)||serviceCategory!=='all')&&matches(item.name+' '+row.textContent));if(!row.hidden)works++;}
+ }
+ categorySelect.value=serviceCategory;
+ workGrid.hidden=works===0;document.querySelector('.service-groups').hidden=groups===0;
+ document.querySelector('.service-empty').hidden=groups+works>0;
+ document.querySelector('#service-results').textContent=works?'Найдено работ: '+works:groups?'Направлений: '+groups:'Ничего не найдено';
+ serviceReset.hidden=!query;
 }
-
 serviceSearch.addEventListener('input',searchServices);
-serviceReset.addEventListener('click',()=>{
-  serviceSearch.value='';
-  searchServices();
-  serviceSearch.focus();
-});
-serviceExpand.addEventListener('click',()=>{
-  const details=visibleDetails();
-  const expand=!details.every(item=>item.open);
-  details.forEach(item=>{item.open=expand;});
-  updateExpandButton();
-});
+serviceReset.addEventListener('click',()=>{serviceSearch.value='';searchServices();serviceSearch.focus();});
+searchServices();
 
 const serviceDialog=document.querySelector('#service-dialog');
 const serviceRequestText=document.querySelector('#service-request-text');
@@ -255,7 +284,7 @@ const resetServiceInquiry=bindVkInquiry({
 });
 
 for(const {card,name,details} of serviceCards){
-  details?.addEventListener('toggle',updateExpandButton);
+
   card.querySelector('[data-service-inquiry]').addEventListener('click',()=>{
     serviceRequestName.textContent=name;
     serviceRequestText.value='Здравствуйте! Интересует услуга «'+name+'». Подскажите, пожалуйста, стоимость и ближайшее время для записи.';
@@ -337,3 +366,19 @@ if (typeof ResizeObserver === 'function') {
   new ResizeObserver(updateScrollProgress).observe(document.body);
 }
 updateScrollProgress();
+
+// BlurFade-inspired, once-only reveals. Content remains visible without JavaScript.
+if(!reduced.matches&&'IntersectionObserver' in window){
+ const revealObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;entry.target.classList.add('revealed');revealObserver.unobserve(entry.target);}},{threshold:.08});
+ const watchReveal=node=>{if(node.matches?.('.service-card,.location-entry,.hero-foot,.oil-filters,.service-controls,.footer-main')){node.classList.add('reveal-ready');revealObserver.observe(node);}};
+ document.querySelectorAll('.service-card,.location-entry,.hero-foot,.oil-filters,.service-controls,.footer-main').forEach(watchReveal);
+ new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes)if(node.nodeType===1)watchReveal(node);}).observe(document.querySelector('#location-list'),{childList:true});
+ reduced.addEventListener('change',()=>{if(reduced.matches){document.querySelectorAll('.reveal-ready').forEach(node=>node.classList.add('revealed'));revealObserver.disconnect();}});
+}
+
+
+
+
+// Run decorative section lighting only while the section is visible.
+const backdropObserver=new IntersectionObserver(entries=>{for(const entry of entries)entry.target.classList.toggle('backdrop-visible',entry.isIntersecting);},{rootMargin:'80px'});
+document.querySelectorAll('.services,.oil-catalogue').forEach(section=>backdropObserver.observe(section));

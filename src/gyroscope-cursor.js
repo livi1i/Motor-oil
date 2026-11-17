@@ -2,7 +2,7 @@
 const enabled = matchMedia(
   '(any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none)'
 );
-const nativeTargets = 'input, textarea, select, option, [contenteditable]:not([contenteditable="false"]), [data-cursor="native"]';
+const nativeTargets = 'iframe, .map-shell, .page-scrollbar, input, textarea, select, option, [contenteditable]:not([contenteditable="false"]), [data-cursor="native"]';
 const interactiveTargets = 'a[href], button:not(:disabled), summary, [role="button"]';
 const restAngle = -45;
 const idleDelay = 450;
@@ -104,3 +104,6 @@ document.addEventListener('keydown', hideCursor);
 enabled.addEventListener('change', hideCursor);
 const dialogObserver = new MutationObserver(hideCursor);
 for (const dialog of dialogs) dialogObserver.observe(dialog, { attributeFilter: ['open'] });
+
+for(const shell of document.querySelectorAll('.map-shell')){shell.dataset.cursor='native';shell.addEventListener('pointerenter',hideCursor);}
+document.addEventListener('mouseout',event=>{if(!event.relatedTarget)hideCursor();},{passive:true});
