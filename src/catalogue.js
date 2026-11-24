@@ -22,6 +22,7 @@ function frameGridPhoto(image, frame) {
 
 export async function mountOilCatalogue({openShops=()=>{}}={}){
  const grid=document.querySelector('#oil-grid'),result=document.querySelector('#oil-results'),empty=document.querySelector('#oil-empty'),more=document.querySelector('#oil-more'),reset=document.querySelector('#oil-reset');
+ const noResults = document.querySelector('#oil-no-results');
  const query=document.querySelector('#oil-search'),brand=document.querySelector('#oil-brand'),volume=document.querySelector('#oil-volume'),sae=document.querySelector('#oil-sae'),dialog=document.querySelector('#oil-dialog');let items=[],shown=12,selected=null,opener=null;
  const entranceObserver=typeof IntersectionObserver==='function'?new IntersectionObserver((entries,observer)=>{
   if(grid.dataset.oilEntrance!=='pending'||!entries.some(entry=>entry.isIntersecting))return;
@@ -56,7 +57,7 @@ export async function mountOilCatalogue({openShops=()=>{}}={}){
    grid.dataset.oilEntrance=entranceObserver?'pending':'playing';
    entranceObserver?.observe(grid);
   }
-  const active=Object.values(filters()).some(Boolean);result.textContent='Найдено: '+found.length;reset.hidden=!active;empty.hidden=found.length>0;empty.textContent=items.length?'Ничего не найдено. Измените параметры поиска.':'Проверяем данные и изображения товаров для витрины.';more.hidden=shown>=found.length;more.textContent='Показать ещё ('+Math.min(12,Math.max(0,found.length-shown))+')';}
+  const active=Object.values(filters()).some(Boolean);result.textContent='Найдено: '+found.length;reset.hidden=!active;empty.hidden=items.length>0;noResults.hidden=!items.length||found.length>0;more.hidden=shown>=found.length;more.textContent='Показать ещё ('+Math.min(12,Math.max(0,found.length-shown))+')';}
  function changed(){shown=12;render();}
  query.addEventListener('input',changed);for(const control of [brand,volume,sae])control.addEventListener('change',changed);reset.addEventListener('click',()=>{query.value=brand.value=volume.value=sae.value='';changed();});more.addEventListener('click',()=>{shown+=12;render();});dialog.addEventListener('click',event=>{if(event.target===dialog){const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();}});dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
  const requestText=document.querySelector('#oil-request-text');

@@ -5,11 +5,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
  def do_GET(self):self.serve(True)
  def serve(self,body):
   relative=urllib.parse.unquote(urllib.parse.urlsplit(self.path).path).lstrip('/') or 'index.html'
-  if not(relative in ('index.html','robots.txt','data/research/locations.json') or relative.startswith(('src/','public/','assets/images/','assets/videos/'))):self.send_error(404);return
+  if not(relative in ('index.html','about.html','robots.txt','data/research/locations.json','data/reviews/photo-reviews.json') or relative.startswith(('src/','public/','assets/images/','assets/videos/'))):self.send_error(404);return
   target=(ROOT/relative).resolve()
   if not target.is_relative_to(ROOT) or not target.is_file():self.send_error(404);return
   clean=target.relative_to(ROOT).as_posix()
-  if not(clean in ('index.html','robots.txt','data/research/locations.json') or clean.startswith(('src/','public/','assets/images/','assets/videos/'))):self.send_error(404);return
+  if not(clean in ('index.html','about.html','robots.txt','data/research/locations.json','data/reviews/photo-reviews.json') or clean.startswith(('src/','public/','assets/images/','assets/videos/'))):self.send_error(404);return
   size=target.stat().st_size;start=0;end=size-1;partial=False
   range_header=self.headers.get('Range','')
   if range_header.startswith('bytes='):

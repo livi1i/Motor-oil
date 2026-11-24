@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-17",
-  "note": "8 photo reviews. Individual ratings verified; includes a 3/5 review. Store pages examined: no additional photo reviews confirmed.",
+  "note": "Подборка подтверждённых отзывов с фотографиями и оценками 4 или 5.",
   "reviews": [
     {
       "author": "Алина А.",
@@ -99,20 +99,68 @@
       "url": "https://yandex.ru/maps/org/motor/219868361638/reviews/?page=2",
       "photo": "./assets/images/reviews/sto-5.jpg",
       "ratingVerifiedAt": "2026-11-17"
+    }
+  ],
+  "textReviews": [
+    {
+      "type": "oils",
+      "author": "Дверь от Камаза",
+      "date": "24 августа",
+      "quote": "Большой выбор масел, адекватные цены, консультанты реально помогают с подбором.",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
+      "source": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/motor/1161095841/reviews/"
     },
     {
-      "id": "wash-2",
-      "author": "Пользователь 1",
-      "date": "22 марта 2023",
-      "rating": 3,
+      "type": "oils",
+      "author": "Анна Сергеева",
+      "date": "19 ноября 2025",
+      "quote": "Консультант быстро по моему описанию характеристик для чего мне нужен спрей,нашла подходящий товар.",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
+      "source": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/motor/1161095841/reviews/"
+    },
+    {
+      "type": "sto",
+      "author": "Михаил А.",
+      "date": "2 ноября 2025",
+      "quote": "перебрали подвеску быстро и качественно, есть запчасти в наличии",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
+      "source": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/motor/219868361638/reviews/"
+    },
+    {
+      "type": "sto",
+      "author": "Антон Алексеев",
+      "date": "8 февраля",
+      "quote": "Специалисты быстро и качественно выполняют свою работу, никаких задержек и неприятных сюрпризов.",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
+      "source": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/motor/219868361638/reviews/"
+    },
+    {
       "type": "wash",
-      "address": "Инженерная улица, 102",
+      "author": "Ольга Ильина",
+      "date": "1 марта 2025",
+      "quote": "Отличное обслуживание, вежливый персонал.",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
       "source": "2ГИС",
-      "url": "https://2gis.ru/pskov/firm/70000001049590525/tab/reviews",
-      "quote": "Мне кажется за 2900 должно было быть лучше",
-      "sourcePhoto": "https://cachizer3.2gis.com/reviews-photos/3ec9d535-b9d8-4ffb-931f-841caafcee9f.jpg?w=320",
-      "photo": "./assets/images/reviews/wash-2.jpg",
-      "ratingVerifiedAt": "2026-11-17"
+      "url": "https://2gis.ru/pskov/firm/70000001049590525/tab/reviews"
+    },
+    {
+      "type": "wash",
+      "author": "София",
+      "date": "9 декабря 2024",
+      "quote": "Отличное обслуживание, вежливый персонал, быстрая и качественная работа, удобный подъезд.",
+      "rating": 5,
+      "ratingVerifiedAt": "2026-11-23",
+      "source": "2ГИС",
+      "url": "https://2gis.ru/pskov/firm/70000001049590525/tab/reviews"
     }
   ]
 }

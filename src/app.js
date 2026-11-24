@@ -140,7 +140,7 @@ function replayStageIntro(){
   void heroWrap.offsetWidth;
   heroWrap.classList.add('entering');
 }
-function chooseDirection(key,focus=false){if(!panels[key])return;const directionChanged=key!==active;active=key;syncServicesVisibility();updateHeaderHours();const data=panels[key];tabs.forEach(tab=>{const chosen=tab.dataset.direction===key;tab.classList.toggle('active',chosen);tab.setAttribute('aria-selected',chosen);if(chosen)tab.setAttribute('aria-current','true');else tab.removeAttribute('aria-current');tab.tabIndex=chosen?0:-1;if(chosen&&focus)tab.focus();});document.querySelector('#direction-panel').setAttribute('aria-labelledby','tab-'+key);document.querySelector('#hero-title').innerHTML=data.title;document.querySelector('#description').textContent=data.description;document.querySelector('#direction-action').innerHTML=(key==='sto'?'Услуги и цены':key==='oils'?'Каталог масел':data.action)+' <span aria-hidden="true">↗</span>';document.querySelector('#direction-action').href=key==='sto'?'#services':key==='oils'?'#oil-catalogue':'#locations';document.querySelector('#stage-fact').textContent=data.fact;if(directionChanged){changeVideo(data);replayStageIntro();}}
+function chooseDirection(key,focus=false){if(!panels[key])return;const directionChanged=key!==active;active=key;syncServicesVisibility();updateHeaderHours();const data=panels[key];tabs.forEach(tab=>{const chosen=tab.dataset.direction===key;tab.classList.toggle('active',chosen);tab.setAttribute('aria-selected',chosen);if(chosen)tab.setAttribute('aria-current','true');else tab.removeAttribute('aria-current');tab.tabIndex=chosen?0:-1;if(chosen&&focus)tab.focus();});document.querySelector('#direction-panel').setAttribute('aria-labelledby','tab-'+key);document.querySelector('#hero-title').innerHTML=data.title;document.querySelector('#description').textContent=data.description;document.querySelector('#direction-action').textContent=key==='sto'?'Услуги и цены':key==='oils'?'Каталог масел':data.action;document.querySelector('#direction-action').href=key==='sto'?'#services':key==='oils'?'#oil-catalogue':'#locations';document.querySelector('#stage-fact').textContent=data.fact;if(directionChanged){changeVideo(data);replayStageIntro();}}
 tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>{if(active!==tab.dataset.direction)chooseDirection(tab.dataset.direction);returnToDirection();});tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;if(event.key==='ArrowLeft')next=(index-1+tabs.length)%tabs.length;if(event.key==='Home')next=0;if(event.key==='End')next=tabs.length-1;if(next!==undefined){event.preventDefault();chooseDirection(tabs[next].dataset.direction,true);returnToDirection();}});});
 const htmlEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function renderList(){const target=document.querySelector('#location-list');target.replaceChildren();locations.filter(loc=>filter==='all'||loc.type===filter).forEach(loc=>{const entry=document.createElement('article');entry.className='location-entry';entry.dataset.id=loc.id;const button=document.createElement('button');button.type='button';button.className='location-focus';button.innerHTML='<span class="location-type">'+htmlEscape(loc.type_label)+'</span><span class="location-address">'+htmlEscape(loc.address)+'</span>';button.setAttribute('aria-label','Показать на карте: '+loc.type_label+', '+loc.address);button.addEventListener('click',()=>focusLocation(loc));const link=document.createElement('a');link.className='location-link';link.href=loc.cardURL;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Открыть в 2ГИС: '+loc.type_label+', '+loc.address);link.textContent='↗';entry.append(button,link);target.append(entry);});}
@@ -235,6 +235,7 @@ for(const group of document.querySelectorAll('[data-service-group]')){
 }
 const serviceSearch=document.querySelector('#service-search');
 const serviceReset=document.querySelector('#service-reset');
+const serviceEmpty = document.querySelector('.service-empty');
 const serviceExpand=document.querySelector('#service-expand');
 serviceExpand.remove();
 const serviceCards=[...document.querySelectorAll('[data-service-group]')].map(card=>({card,name:card.dataset.serviceName,description:card.querySelector('.service-description').textContent,rows:[...card.querySelectorAll('[data-price-row]')]}));
@@ -265,7 +266,7 @@ function searchServices(){
  }
  categorySelect.value=serviceCategory;
  workGrid.hidden=works===0;document.querySelector('.service-groups').hidden=groups===0;
- document.querySelector('.service-empty').hidden=groups+works>0;
+ serviceEmpty.hidden=groups+works>0;
  document.querySelector('#service-results').textContent=works?'Найдено работ: '+works:groups?'Направлений: '+groups:'Ничего не найдено';
  serviceReset.hidden=!query;
 }
